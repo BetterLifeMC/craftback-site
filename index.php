@@ -5,9 +5,8 @@
     $names = $sqlquery->get_names();
     $ports = $sqlquery->get_ports();
     $fingerprints = $sqlquery->get_fingerprints();
+    $versions = $sqlquery->get_versions();
     $id = $sqlquery->get_id();
-
-
 
  ?>
 <!DOCTYPE html>
@@ -23,8 +22,7 @@
         <div class="topnav" id="myTopnav">
             <a href="#home" class="active">Home</a>
             <div class="dropdown">
-                <button class="dropbtn">CraftBack Servers
-                </button>
+                <button class="dropbtn">CraftBack Servers</button>
                 <div class="dropdown-content">
                     <?php
                         for($i = 0; $i < sizeof($id); $i ++){
@@ -40,6 +38,23 @@
                     <a href="https://gitlab.com/gt3ch1/craftback-site">CraftBack UI</a>
                 </div>
             </div>
+        </div>
+        <?php
+            for($i = 0; $i < sizeof($id); $i++){
+                if($i % 3 == 0){
+        ?>
+        <div id="main" class="w3-row">
+            <?php
+                }
+            ?>
+            <div class="w3-third w3-container w3-green">
+                <h2><?php echo $names[$i]; ?></h2>
+            </div>
+            <?php
+                if($i % 3 == 0){
+             ?>
+            </div>
+        <? } } ?>
         </div>
     </body>
 </html>
