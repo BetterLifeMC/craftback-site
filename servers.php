@@ -102,8 +102,8 @@
 
                 document.getElementById("allPlayers").innerHTML = "";
                 for (var i = 0; i < PlayerArrayNameList.length; i++) {
-                    document.getElementById("allPlayers").innerHTML += "<span style='margin-top:6px;'>" +
-                     PlayerArrayNameList[i]+"</span><img src='https://minotar.net/avatar/"+playerArrayUUIDList[i]+"/32.png' style='float:right' alt='Skin head'><br>";
+                    document.getElementById("allPlayers").innerHTML += "<span id='playerHead'>" +
+                     PlayerArrayNameList[i]+"</span><img src='https://minotar.net/avatar/"+playerArrayUUIDList[i]+"/32.png' id='playerHeadImage' alt='Skin head'><br>";
                 }
                 // setTimeout(getPlayerInfo, 5000);
             }

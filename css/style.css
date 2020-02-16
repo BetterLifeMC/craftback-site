@@ -142,6 +142,16 @@ div#allPlayers{
   text-align: left;
   padding: 10px;
 }
+#playerHead{
+    float:left;
+    margin-top:6px!important;
+}
+#playerHeadImage{
+    display:inline-block;
+    float:right;
+    margin-bottom:20px;
+    position:relative;
+}
 button{
   width: 4%;
 }
