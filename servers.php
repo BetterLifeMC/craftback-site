@@ -32,7 +32,6 @@
                         }
                     },
                     error: function (jqXHR, status, errorThrown) {
-                        alert('error');
                     }
                 });
                 setTimeout(getChats, 1000);
