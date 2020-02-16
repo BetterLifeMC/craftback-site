@@ -67,6 +67,7 @@
                             alert(404);
                         },
                         200: function (response) {
+                            playerUUIDList = response;
                             playerUUIDList = playerUUIDList.replace("]","");
                             playerUUIDList = playerUUIDList.replace("[","");
                             playerUUIDList = playerUUIDList.replace("\n","");
