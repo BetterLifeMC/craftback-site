@@ -56,21 +56,48 @@
             var playerNameList;
             var currentPlayerCount;
             function getPlayerInfo(){
-            	$.get( "http://games01-serv:8080/getPlayerUUIDS", function( data ) {
-            	    playerUUIDList = data;
-            	});
-                playerUUIDList = playerUUIDList.replace("]","");
-                playerUUIDList = playerUUIDList.replace("[","");
-                playerUUIDList = playerUUIDList.replace("\n","");
-                playerArrayUUIDList = playerUUIDList.split(", ");
-                currentPlayerCount = playerArrayUUIDList.length;
-            	$.get( "http://games01-serv:8080/getPlayerNames", function( data ) {
-            	    playerNameList = data;
-            	});
-                playerNameList = playerNameList.replace("]","");
-                playerNameList = playerNameList.replace("[","");
-                playerNameList = playerNameList.replace("\n","");
-                playerArrayNameList = playerNameList.split(", ");
+
+                $.get({
+                    url: 'http://<?php echo $hostnames[0]; ?>:<?php echo $ports[0]; ?>/getPlayerUUIDS',
+                    dataType: 'text',
+                    type: 'GET',
+                    async: true,
+                    statusCode: {
+                        404: function (response) {
+                            alert(404);
+                        },
+                        200: function (response) {
+                            playerUUIDList = playerUUIDList.replace("]","");
+                            playerUUIDList = playerUUIDList.replace("[","");
+                            playerUUIDList = playerUUIDList.replace("\n","");
+                            playerArrayUUIDList = playerUUIDList.split(", ");
+                            currentPlayerCount = playerArrayUUIDList.length;
+                        }
+                    },
+                    error: function (jqXHR, status, errorThrown) {
+                    }
+                });
+                
+                $.get({
+                    url: 'http://<?php echo $hostnames[0]; ?>:<?php echo $ports[0]; ?>/getPlayerNames',
+                    dataType: 'text',
+                    type: 'GET',
+                    async: true,
+                    statusCode: {
+                        404: function (response) {
+                            alert(404);
+                        },
+                        200: function (response) {
+                            playerUUIDList = playerUUIDList.replace("]","");
+                            playerUUIDList = playerUUIDList.replace("[","");
+                            playerUUIDList = playerUUIDList.replace("\n","");
+                            playerArrayUUIDList = playerUUIDList.split(", ");
+                            currentPlayerCount = playerArrayUUIDList.length;
+                        }
+                    },
+                    error: function (jqXHR, status, errorThrown) {
+                    }
+                });
 
                 setTimeout(getPlayerInfo, 5000);
             }
