@@ -7,6 +7,7 @@
     $fingerprints = $sqlquery->get_fingerprints();
     $hostnames = $sqlquery->get_hostnames();
     $id = $sqlquery->get_id();
+    $maxplayers = $sqlquery->get_maxplayers();
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -132,7 +133,8 @@
                 <div class="logConsole" id="logConsole"></div>
             </pre>
             <div class="playerBox">
-                <span>Current Players: (<span id="currentPlayerCount"></span>)</span>
+                <span>Server Name: <?php echo $names[0]; ?>
+                <span>Current Players: (<span id="currentPlayerCount"></span>/<?php echo $maxplayers[0]; ?>)</span>
                 <div id="allPlayers">
                 </div>
             </div>
