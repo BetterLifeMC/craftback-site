@@ -134,16 +134,17 @@ input.messageBox{
     width: 95%;
 }
 div.playerBox{
-  float:right;
-  width:20%;
-  text-align: center;
+   float:right;
+   width:20%;
+   text-align: center;
 }
 div#allPlayers{
-  text-align: left;
-  padding: 10px;
+   text-align: left;
+   padding: 10px;
 }
 #playerHead{
     float:left;
+    margin-top:3px;
 }
 #playerHeadImage{
     float:right;

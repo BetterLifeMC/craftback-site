@@ -101,18 +101,22 @@
                 });
 
                 document.getElementById("allPlayers").innerHTML = "";
-                document.getElementById("currentPlayerCount").innerHTML = currentPlayerCount;
                 if(playerArrayUUIDList[0].length > 0){
                     for (var i = 0; i < currentPlayerCount; i++) {
                         document.getElementById("allPlayers").innerHTML += "<span id='playerHead'>" +
                          PlayerArrayNameList[i]+"</span><img src='https://minotar.net/avatar/"+playerArrayUUIDList[i]+"/32.png' id='playerHeadImage' alt='Skin head'></img><br><hr>";
                     }
+                }else{
+                    currentPlayerCount = 0;
                 }
-                // setTimeout(getPlayerInfo, 5000);
+                document.getElementById("currentPlayerCount").innerHTML = currentPlayerCount;
+
+                setTimeout(getPlayerInfo, 5000);
             }
+            setTimeout(getPlayerInfo(),1000);
         </script>
     </head>
-    <body onload="getChats();getPlayerInfo();">
+    <body onload="getChats();">
         <!-- Shamelessly snatched from W3 -->
         <div>
             <div class="topnav" id="myTopnav">
