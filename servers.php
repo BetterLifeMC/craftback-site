@@ -65,7 +65,7 @@
             <div class="messageBox">
                 <form>
                     <input id="messageBox" class="messageBox" type="text" name="message" />
-                </input>
+                </form>
             </div>
         </div>
     </body>
