@@ -53,7 +53,7 @@
              });
         </script>
     </head>
-    <body>
+    <body onload="getChats();">
         <!-- Shamelessly snatched from W3 -->
         <div>
             <div class="topnav" id="myTopnav">
