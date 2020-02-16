@@ -136,9 +136,9 @@
                     </div>
                 </div>
             </div>
-            <div class="logConsole" >
+            <div class="logConsole">
                 <pre id="logConsole"></pre>
-            </div
+            </div>
             <div class="playerBox">
                 <span>Server Name: <?php echo $names[0]; ?></span>
                 <br>
