@@ -117,4 +117,5 @@ div.logConsole{
     width: 100%;
     height:50%;
     position: absolute;
+    overflow: auto;
 }
