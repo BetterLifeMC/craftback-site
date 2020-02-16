@@ -49,7 +49,7 @@
                 <div class="logConsole" id="logConsole"></div>
             </pre>
             <div class="messageBox">
-                <input method="get">
+                <form method="get">
                     <input class="messageBox" type="text" name="message" />
                     <button name="Submit">Submit</button>
                 </input>
