@@ -43,6 +43,7 @@
   font-family: inherit;
   margin: 0;
 }
+.dropbtn{width:100%;}
 
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
