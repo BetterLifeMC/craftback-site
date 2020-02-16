@@ -136,6 +136,7 @@
                 <span>Server Name: <?php echo $names[0]; ?></span>
                 <br>
                 <span>Current Players: (<span id="currentPlayerCount"></span>/<?php echo $maxplayers[0]; ?>)</span>
+                <hr>
                 <div id="allPlayers">
                 </div>
             </div>
