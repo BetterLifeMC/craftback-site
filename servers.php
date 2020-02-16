@@ -133,7 +133,8 @@
                 <div class="logConsole" id="logConsole"></div>
             </pre>
             <div class="playerBox">
-                <span>Server Name: <?php echo $names[0]; ?>
+                <span>Server Name: <?php echo $names[0]; ?></span>
+                <br>
                 <span>Current Players: (<span id="currentPlayerCount"></span>/<?php echo $maxplayers[0]; ?>)</span>
                 <div id="allPlayers">
                 </div>
