@@ -101,9 +101,12 @@
                 });
 
                 document.getElementById("allPlayers").innerHTML = "";
-                for (var i = 0; i < PlayerArrayNameList.length; i++) {
-                    document.getElementById("allPlayers").innerHTML += "<span id='playerHead'>" +
-                     PlayerArrayNameList[i]+"</span><img src='https://minotar.net/avatar/"+playerArrayUUIDList[i]+"/32.png' id='playerHeadImage' alt='Skin head'></img><br><hr>";
+                document.getElementById("currentPlayerCount").innerHTML = currentPlayerCount;
+                if(playerArrayUUIDList[0].length > 0){
+                    for (var i = 0; i < currentPlayerCount; i++) {
+                        document.getElementById("allPlayers").innerHTML += "<span id='playerHead'>" +
+                         PlayerArrayNameList[i]+"</span><img src='https://minotar.net/avatar/"+playerArrayUUIDList[i]+"/32.png' id='playerHeadImage' alt='Skin head'></img><br><hr>";
+                    }
                 }
                 // setTimeout(getPlayerInfo, 5000);
             }
@@ -119,7 +122,7 @@
                 <div class="logConsole" id="logConsole"></div>
             </pre>
             <div class="playerBox">
-                <span>Current Players</span>
+                <span>Current Players: (<span id="currentPlayerCount"></span>)</span>
                 <div id="allPlayers">
                 </div>
             </div>
