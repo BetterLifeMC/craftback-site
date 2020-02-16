@@ -103,7 +103,7 @@
                 document.getElementById("allPlayers").innerHTML = "";
                 for (var i = 0; i < PlayerArrayNameList.length; i++) {
                     document.getElementById("allPlayers").innerHTML += "<span id='playerHead'>" +
-                     PlayerArrayNameList[i]+"</span><img src='https://minotar.net/avatar/"+playerArrayUUIDList[i]+"/32.png' id='playerHeadImage' alt='Skin head'><br>";
+                     PlayerArrayNameList[i]+"</span><img src='https://minotar.net/avatar/"+playerArrayUUIDList[i]+"/32.png' id='playerHeadImage' alt='Skin head'><br><br><hr>";
                 }
                 // setTimeout(getPlayerInfo, 5000);
             }
