@@ -113,8 +113,8 @@
     text-align: left;
   }
 }
-.logConsole{
+div.logConsole{
     width: 100%;
-    height:85%;
+    height:50%;
     position: absolute;
 }

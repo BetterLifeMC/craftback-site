@@ -18,7 +18,7 @@
         <script>
             // Snatched from https://happycoding.io/tutorials/java-server/post#polling-with-ajax
             function getChats(){
-                $.ajax({
+                $.get({
                     url: 'http://games01-serv:<?php echo $ports[0]; ?>/getLog',
                     dataType: 'text',
                     type: 'GET',
@@ -44,6 +44,8 @@
         <div class="topnav" id="myTopnav">
             <a href="/" class="active">Home</a>
         </div>
-        <div class="logConsole" id="logConsole"></div>
+        <pre>
+            <div class="logConsole" id="logConsole"></div>
+        </pre>
     </body>
 </html>
