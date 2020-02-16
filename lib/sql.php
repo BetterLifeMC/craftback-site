@@ -17,6 +17,7 @@
     var $fingerprint = array();
     var $hostnames = array();
     var $maxplayers = array();
+    var $versions = array();
     var $id = array();
     function set_names($a){
       $this->names = $a;
@@ -35,6 +36,9 @@
     }
     function set_maxplayers($f){
         $this->maxplayers = $f;
+    }
+    function set_versions($g){
+        $this->maxplayers = $g;
     }
 
     function get_id(){
@@ -55,7 +59,9 @@
     function get_hostnames(){
         return $this->hostnames;
     }
-
+    function get_versions(){
+        return $this->versions;
+    }
     function querySQL($query){
       $servername = "localhost";
       $username = "craftback";
@@ -77,6 +83,7 @@
       $newFingerPrints = array();
       $newHostNames = array();
       $newMaxPlayers = array();
+      $newVersions = array();
       $id = array();
       while($row = mysqli_fetch_array($result)){
         array_push($newNames, $row['name']);
@@ -84,6 +91,7 @@
         array_push($newFingerPrints, $row['fingerprint']);
         array_push($newHostNames, $row['hostname']);
         array_push($newMaxPlayers, $row['maxplayers']);
+        array_push($newVersions, $row['verion']);
         array_push($id, $row['id']);
       }
 
@@ -92,6 +100,7 @@
       $this->set_ports($newPorts);
       $this->set_fingerprints($newFingerPrints);
       $this->set_maxplayers($newMaxPlayers);
+      $this->set_versions($newVersions);
       $this->set_id($id);
     }
   }
