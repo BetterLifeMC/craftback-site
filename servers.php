@@ -59,25 +59,24 @@
             	$.get( "http://games01-serv:8080/getPlayerUUIDS", function( data ) {
             	    playerUUIDList = data;
             	});
+                playerUUIDList = playerUUIDList.replace("]","");
+                playerUUIDList = playerUUIDList.replace("[","");
+                playerUUIDList = playerUUIDList.replace("\n","");
+                playerArrayUUIDList = playerUUIDList.split(", ");
+                currentPlayerCount = playerArrayUUIDList.length;
             	$.get( "http://games01-serv:8080/getPlayerNames", function( data ) {
             	    playerNameList = data;
             	});
+                playerNameList = playerNameList.replace("]","");
+                playerNameList = playerNameList.replace("[","");
+                playerNameList = playerNameList.replace("\n","");
+                playerArrayNameList = playerNameList.split(", ");
 
-            	playerUUIDList = playerUUIDList.replace("]","");
-            	playerUUIDList = playerUUIDList.replace("[","");
-            	playerUUIDList.replace("\n","");
-            	playerArrayUUIDList = this.playerUUIDList.split(", ");
-
-            	playerNameList = playerNameList.replace("]","");
-            	playerNameList = playerNameList.replace("[","");
-            	playerNameList.replace("\n","");
-            	playerArrayNameList = this.playerNameList.split(", ");
-
-            	currentPlayerCount = playerArrayList.length;
+                setTimeout(getPlayerInfo, 5000);
             }
         </script>
     </head>
-    <body onload="getChats();">
+    <body onload="getChats();getPlayerInfo();">
         <!-- Shamelessly snatched from W3 -->
         <div>
             <div class="topnav" id="myTopnav">
