@@ -22,6 +22,6 @@
             <a href="#about">About</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
-        <iframe src="http://games01-serv:<?php echo $ports[0]; ?>/getLog"></iframe>
+        <iframe src="http://games01-serv:<?php echo $ports[0]; ?>/getLog" width="100%" height="90%"></iframe>
     </body>
 </html>
