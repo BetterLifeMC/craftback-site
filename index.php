@@ -6,6 +6,7 @@
     $ports = $sqlquery->get_ports();
     $fingerprints = $sqlquery->get_fingerprints();
     $versions = $sqlquery->get_versions();
+    $maxplayers = $sqlquery->get_maxplayers();
     $id = $sqlquery->get_id();
 
  ?>
@@ -52,7 +53,9 @@
                 <hr>
                 <span class="serverInfo">CraftBack Version: <span style="float:right"><?php echo $versions[$i]; ?></span></span>
                 <br>
-                <span class="serverInfo">Server hostname: <span style="float:right"><?php echo $hostnames[$i]; ?></span></span>
+                <br>
+                <span class="serverInfo">Server hostname: <span style="float:right"><?php echo $names[$i]; ?></span></span>
+                <br>
                 <br>
                 <span class="serverInfo">Max players: <span style="float:right"><?php echo $maxplayers[$i]; ?></span></span>
 
