@@ -47,6 +47,8 @@
         <pre>
             <div class="logConsole" id="logConsole"></div>
         </pre>
-        <input class="messageBox" type="text" name="message" />
+        <div class="messageBox">
+            <input class="messageBox" type="text" name="message" />
+        </div>
     </body>
 </html>
