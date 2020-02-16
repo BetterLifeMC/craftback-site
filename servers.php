@@ -129,17 +129,6 @@
             <div class="topnav" id="myTopnav">
                 <a href="/craftback-site" class="active">Home</a>
                 <div class="dropdown">
-                    <button class="dropbtn">CraftBack Servers
-                    </button>
-                    <div class="dropdown-content">
-                        <?php
-                            for($i = 0; $i < sizeof($id); $i ++){
-                        ?>
-                        <a href="servers.php?fingerprint=<?php echo $fingerprints[$i]; ?>"><?php echo $names[$i]; ?></a>
-                        <?php } ?>
-                    </div>
-                </div>
-                <div class="dropdown">
                     <button class="dropbtn">Git</button>
                     <div class="dropdown-content">
                         <a href="https://gitlab.com/gt3ch1/craftback">CraftBack</a>
