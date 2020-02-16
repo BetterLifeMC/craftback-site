@@ -113,7 +113,7 @@
 
                 setTimeout(getPlayerInfo, 5000);
             }
-            setTimeout(getPlayerInfo(),1000);
+            setTimeout(getPlayerInfo,1000);
         </script>
     </head>
     <body onload="getChats();">
