@@ -15,7 +15,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <title>craftback</title>
+        <title>CraftBack - <?php echo $servername[0]; ?></title>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script>
             // Snatched from https://happycoding.io/tutorials/java-server/post#polling-with-ajax
