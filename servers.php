@@ -37,6 +37,20 @@
                 });
                 setTimeout(getChats, 1000);
             }
+            $(function () {
+                $('form').on('submit', function (e) {
+                    e.preventDefault
+                    $.ajax({
+                        type: 'get',
+                        url: 'http://games01-serv:<?php echo $ports[0]; ?>/sendMessage/',
+                        data: $('form').serialize(),
+                        success: function () {
+            		        document.getElementById('messageBox').value="";
+                        }
+                    });
+                });
+                document.getElementById('messageBox').value="";
+             });
         </script>
     </head>
     <body>
@@ -49,8 +63,8 @@
                 <div class="logConsole" id="logConsole"></div>
             </pre>
             <div class="messageBox">
-                <form method="get">
-                    <input class="messageBox" type="text" name="message" />
+                <form method="get" id="form" name="form">
+                    <input id="messageBox" class="messageBox" type="text" name="message" />
                     <button name="Submit">Submit</button>
                 </input>
             </div>
