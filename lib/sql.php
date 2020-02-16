@@ -38,7 +38,7 @@
         $this->maxplayers = $f;
     }
     function set_versions($g){
-        $this->maxplayers = $g;
+        $this->versions = $g;
     }
 
     function get_id(){
