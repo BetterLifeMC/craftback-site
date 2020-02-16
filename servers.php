@@ -41,14 +41,16 @@
     </head>
     <body>
         <!-- Shamelessly snatched from W3 -->
-        <div class="topnav" id="myTopnav">
-            <a href="/" class="active">Home</a>
-        </div>
-        <pre>
-            <div class="logConsole" id="logConsole"></div>
-        </pre>
-        <div class="messageBox">
-            <input class="messageBox" type="text" name="message" />
+        <div>
+            <div class="topnav" id="myTopnav">
+                <a href="/" class="active">Home</a>
+            </div>
+            <pre>
+                <div class="logConsole" id="logConsole"></div>
+            </pre>
+            <div class="messageBox">
+                <input class="messageBox" type="text" name="message" />
+            </div>
         </div>
     </body>
 </html>
