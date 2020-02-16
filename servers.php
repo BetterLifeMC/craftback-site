@@ -106,10 +106,7 @@
                 try{
                     if(playerArrayUUIDList[0].length > 0){
                         for (var i = 0; i < currentPlayerCount; i++) {
-                            document.getElementById("allPlayers").innerHTML += "<span id='playerHead'>" +
-                             PlayerArrayNameList[i]+"</span>
-                             <img src='https://minotar.net/avatar/"+playerArrayUUIDList[i]+"/32.png'
-                             id='playerHeadImage' alt='Skin head'></img><br><hr>";
+                            document.getElementById("allPlayers").innerHTML += "<span id='playerHead'>" + PlayerArrayNameList[i]+"</span><img src='https://minotar.net/avatar/"+playerArrayUUIDList[i]+"/32.png' id='playerHeadImage' alt='Skin head'></img><br><hr>";
                         }
                     }else{
                         currentPlayerCount = 0;
@@ -120,7 +117,7 @@
                     currentPlayerCount = 0;
                     document.getElementById("currentPlayerCount").innerHTML = currentPlayerCount;
                 }
-                
+
                 setTimeout(getPlayerInfo, 1000);
             }
         </script>
