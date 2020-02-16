@@ -144,13 +144,9 @@ div#allPlayers{
 }
 #playerHead{
     float:left;
-    margin-top:6px!important;
 }
 #playerHeadImage{
-    display:inline-block;
     float:right;
-    margin-bottom:20px;
-    position:relative;
 }
 button{
   width: 4%;
