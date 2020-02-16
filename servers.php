@@ -39,7 +39,7 @@
             }
             $(function () {
                 $('form').on('submit', function (e) {
-                    e.preventDefault
+                    e.preventDefault();
                     $.ajax({
                         type: 'get',
                         url: 'http://games01-serv:<?php echo $ports[0]; ?>/sendMessage/',
