@@ -41,7 +41,7 @@
         </div>
         <?php
             for($i = 0; $i < sizeof($id); $i++){
-                if($i % 3 == 0){
+                if(($i % 3 == 0) && ($i > 2)) {
         ?>
         <div id="main" class="w3-row">
             <?php
@@ -51,7 +51,7 @@
                 <h2><?php echo $names[$i]; ?></h2>
             </div>
             <?php
-                if($i % 3 == 0){
+                if(($i % 3 == 0) && ($i > 2)){
              ?>
             </div>
         <?php } } ?>
