@@ -55,8 +55,10 @@
             var playerUUIDList;
             var playerNameList;
             var currentPlayerCount;
-            function getPlayerInfo(){
+            var playerArrayUUIDList;
+            var PlayerArrayNameList;
 
+            function getPlayerInfo(){
                 $.get({
                     url: 'http://<?php echo $hostnames[0]; ?>:<?php echo $ports[0]; ?>/getPlayerUUIDS',
                     dataType: 'text',
