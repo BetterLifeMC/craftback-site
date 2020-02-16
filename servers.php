@@ -105,7 +105,7 @@
                     document.getElementById("allPlayers").innerHTML += "<span style='margin-top:6px;'>" +
                      PlayerArrayNameList[i]+"</span><img src='https://minotar.net/avatar/"+playerArrayUUIDList[i]+"/32.png' style='float:right' alt='Skin head'><br>";
                 }
-                setTimeout(getPlayerInfo, 5000);
+                // setTimeout(getPlayerInfo, 5000);
             }
         </script>
     </head>
