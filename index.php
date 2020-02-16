@@ -33,12 +33,13 @@
                     <?php } ?>
                 </div>
             </div>
-            <button class="dropbtn">Git</button>
+            <div class="dropdown">
+                <button class="dropbtn">Git</button>
                 <div class="dropdown-content">
                     <a href="https://gitlab.com/gt3ch1/craftback">CraftBack</a>
                     <a href="https://gitlab.com/gt3ch1/craftback-site">CraftBack UI</a>
                 </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
         </div>
     </body>
 </html>
