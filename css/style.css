@@ -123,12 +123,16 @@ div.logConsole{
 }
 div.messageBox{
   width: 100%;
-  background-color: darkgray;
+  background-color: #4CAF50;
   display:block;
   position:absolute;
   bottom: 0;
   padding: 5px;
+  margin-bottom: 0.5%;
 }
 input.messageBox{
-    width: 50%;
+    width: 95%;
+}
+button{
+  width: 4%;
 }
