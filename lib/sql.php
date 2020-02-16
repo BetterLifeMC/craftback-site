@@ -91,7 +91,7 @@
         array_push($newFingerPrints, $row['fingerprint']);
         array_push($newHostNames, $row['hostname']);
         array_push($newMaxPlayers, $row['maxplayers']);
-        array_push($newVersions, $row['verion']);
+        array_push($newVersions, $row['version']);
         array_push($id, $row['id']);
       }
 
