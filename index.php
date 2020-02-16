@@ -3,6 +3,7 @@
     $sqlquery = new doSQL();
     $sqlquery->doSQLStuff("SELECT * FROM `Servers`");
     $names = $sqlquery->get_names();
+    $hostnames = $sqlquery->get_hostnames();
     $ports = $sqlquery->get_ports();
     $fingerprints = $sqlquery->get_fingerprints();
     $versions = $sqlquery->get_versions();
@@ -54,11 +55,12 @@
                 <span class="serverInfo">CraftBack Version: <span style="float:right"><?php echo $versions[$i]; ?></span></span>
                 <br>
                 <br>
-                <span class="serverInfo">Server hostname: <span style="float:right"><?php echo $names[$i]; ?></span></span>
+                <span class="serverInfo">Server hostname: <span style="float:right"><?php echo $hostnames[$i]; ?></span></span>
                 <br>
                 <br>
                 <span class="serverInfo">Max players: <span style="float:right"><?php echo $maxplayers[$i]; ?></span></span>
-
+                <br>
+                <br>
             </div>
             <?php
                 if(($i % 3 == 0) && ($i > 2)){
