@@ -57,7 +57,7 @@
         <!-- Shamelessly snatched from W3 -->
         <div>
             <div class="topnav" id="myTopnav">
-                <a href="/" class="active">Home</a>
+                <a href="../" class="active">Home</a>
             </div>
             <pre>
                 <div class="logConsole" id="logConsole"></div>
