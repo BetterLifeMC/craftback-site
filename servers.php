@@ -14,31 +14,29 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <title>craftback</title>
-            <script>
-                // Snatched from https://happycoding.io/tutorials/java-server/post#polling-with-ajax
-                function getChats(){
-                    var ajaxRequest = new XMLHttpRequest();
-                    ajaxRequest.onreadystatechange = function(){
-
-                        if(ajaxRequest.readyState == 4){
-                            //the request is completed, now check its status
-                            if(ajaxRequest.status == 200){
-                                document.getElementById("logConsole").innerHTML = ajaxRequest.responseText;
-                            }
-                            else{
-                                console.log("Status error: " + ajaxRequest.status);
-                            }
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+            // Snatched from https://happycoding.io/tutorials/java-server/post#polling-with-ajax
+            function getChats(){
+                $.ajax({
+                    url: 'http://games01-serv:<?php echo $ports[0]; ?>/getLog',
+                    dataType: 'text',
+                    type: 'GET',
+                    async: true,
+                    statusCode: {
+                        404: function (response) {
+                            alert(404);
+                        },
+                        200: function (response) {
+                            document.getElementById("logConsole").innerHTML = response;
                         }
-                        else{
-                            console.log("Ignored readyState: " + ajaxRequest.readyState);
-                        }
+                    },
+                    error: function (jqXHR, status, errorThrown) {
+                        alert('error');
                     }
-                    ajaxRequest.open('GET', 'http://games01-serv:<?php echo $ports[0]; ?>/getLog');
-                    ajaxRequest.send();
-
-                    //refresh the chats in one second
-                    setTimeout(getChats, 1000);
-                }
+                });
+                setTimeout(getChats, 1000);
+            }
         </script>
     </head>
     <body>
