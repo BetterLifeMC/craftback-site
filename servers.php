@@ -77,7 +77,7 @@
                     error: function (jqXHR, status, errorThrown) {
                     }
                 });
-                
+
                 $.get({
                     url: 'http://<?php echo $hostnames[0]; ?>:<?php echo $ports[0]; ?>/getPlayerNames',
                     dataType: 'text',
@@ -88,11 +88,11 @@
                             alert(404);
                         },
                         200: function (response) {
-                            playerUUIDList = playerUUIDList.replace("]","");
-                            playerUUIDList = playerUUIDList.replace("[","");
-                            playerUUIDList = playerUUIDList.replace("\n","");
-                            playerArrayUUIDList = playerUUIDList.split(", ");
-                            currentPlayerCount = playerArrayUUIDList.length;
+                            playerNameList = response;
+                            playerNameList = playerNameList.replace("]","");
+                            playerNameList = playerNameList.replace("[","");
+                            playerNameList = playerNameList.replace("\n","");
+                            PlayerArrayNameList = playerNameList.split(", ");
                         }
                     },
                     error: function (jqXHR, status, errorThrown) {
