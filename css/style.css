@@ -138,6 +138,10 @@ div.playerBox{
   width:20%;
   text-align: center;
 }
+div#allPlayers{
+  text-align: left;
+  padding: 10px;
+}
 button{
   width: 4%;
 }
