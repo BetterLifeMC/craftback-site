@@ -156,3 +156,8 @@ div#allPlayers{
 button{
   width: 4%;
 }
+.info{
+    background-color: #4E90BF;
+    color:white;
+    border: 1px solid #fff;
+}

@@ -47,7 +47,7 @@
             <?php
                 }
             ?>
-            <div class="w3-third w3-container w3-green">
+            <div class="w3-third w3-container">
                 <h2><?php echo $names[$i]; ?></h2>
             </div>
             <?php
