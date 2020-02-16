@@ -5,6 +5,7 @@
     $names = $sqlquery->get_names();
     $ports = $sqlquery->get_ports();
     $fingerprints = $sqlquery->get_fingerprints();
+    $hostnames = $sqlquery->get_hostnames();
     $id = $sqlquery->get_id();
  ?>
 <!DOCTYPE html>
@@ -19,7 +20,7 @@
             // Snatched from https://happycoding.io/tutorials/java-server/post#polling-with-ajax
             function getChats(){
                 $.get({
-                    url: 'http://games01-serv:<?php echo $ports[0]; ?>/getLog',
+                    url: 'http://<?php echo $hostnames[0]; ?>:<?php echo $ports[0]; ?>/getLog',
                     dataType: 'text',
                     type: 'GET',
                     async: true,
@@ -41,7 +42,7 @@
                     e.preventDefault();
                     $.ajax({
                         type: 'get',
-                        url: 'http://games01-serv:<?php echo $ports[0]; ?>/sendMessage/',
+                        url: 'http://<?php echo $hostnames[0]; ?>:<?php echo $ports[0]; ?>/sendMessage/',
                         data: $('form').serialize(),
                         success: function () {
             		        document.getElementById('messageBox').value="";
