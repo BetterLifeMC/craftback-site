@@ -136,10 +136,10 @@
                     </div>
                 </div>
             </div>
-            <div class="logConsole">
+            <div class="logConsole w3-threequarter">
                 <pre id="logConsole"></pre>
             </div>
-            <div class="playerBox">
+            <div class="playerBox w3-quarter">
                 <span>Server Name: <?php echo $names[0]; ?></span>
                 <br>
                 <span>Current Players: (<span id="currentPlayerCount"></span>/<?php echo $maxplayers[0]; ?>)</span>

@@ -115,17 +115,22 @@
   }
 }
 div.logConsole{
-    width: 80%;
-    height:85%;
+
+    height:90.4%;
     position: absolute;
     display: block;
     overflow-y: auto;
     padding: 20px;
     margin: 0;
 }
+div.logConsole pre{
+  color: #333;
+
+
+}
 div.messageBox{
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #aaa;
   display:block;
   position:absolute;
   bottom: 0;
@@ -134,13 +139,16 @@ div.messageBox{
 }
 input.messageBox{
     width: 100%;
+    border: 0px;
 }
 div.playerBox{
     float:right;
-    width:20%;
+    height: 90%;
     text-align: left;
     padding-left: 10px;
-}
+    padding-top: 10px;
+    padding-right: 10px;
+    }
 div#allPlayers{
    text-align: left;
    padding-right: 10px;
@@ -163,4 +171,18 @@ button{
 }
 span.serverInfo{
     font-size: 16px;
+}
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+
+}
+
+::-webkit-scrollbar-corner {
+    background: #610b0b;
 }
