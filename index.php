@@ -23,7 +23,7 @@
         <div class="topnav" id="myTopnav">
             <a href="#home" class="active">Home</a>
             <div class="dropdown">
-                <button class="dropbtn">Dropdown
+                <button class="dropbtn">CraftBack Servers
                 </button>
                 <div class="dropdown-content">
                     <?php
@@ -33,7 +33,11 @@
                     <?php } ?>
                 </div>
             </div>
-            <a href="#about">About</a>
+            <button class="dropbtn">Git</button>
+                <div class="dropdown-content">
+                    <a href="https://gitlab.com/gt3ch1/craftback">CraftBack</a>
+                    <a href="https://gitlab.com/gt3ch1/craftback-site">CraftBack UI</a>
+                </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
     </body>
