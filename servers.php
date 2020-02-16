@@ -23,7 +23,7 @@
                         if(ajaxRequest.readyState == 4){
                             //the request is completed, now check its status
                             if(ajaxRequest.status == 200){
-                                document.getElementById("chats").innerHTML = ajaxRequest.responseText;
+                                document.getElementById("logConsole").innerHTML = ajaxRequest.responseText;
                             }
                             else{
                                 console.log("Status error: " + ajaxRequest.status);
