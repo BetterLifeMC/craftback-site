@@ -113,7 +113,7 @@
     text-align: left;
   }
 }
-iframe{
+.logConsole{
     width: 100%;
     height:85%;
     position: absolute;
