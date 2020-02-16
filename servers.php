@@ -51,6 +51,30 @@
                 });
                 document.getElementById('messageBox').value="";
              });
+
+            var playerUUIDList;
+            var playerNameList;
+            var currentPlayerCount;
+            function getPlayerInfo(){
+            	$.get( "http://games01-serv:8080/getPlayerUUIDS", function( data ) {
+            	    playerUUIDList = data;
+            	});
+            	$.get( "http://games01-serv:8080/getPlayerNames", function( data ) {
+            	    playerNameList = data;
+            	});
+
+            	playerUUIDList = playerUUIDList.replace("]","");
+            	playerUUIDList = playerUUIDList.replace("[","");
+            	playerUUIDList.replace("\n","");
+            	playerArrayUUIDList = this.playerUUIDList.split(", ");
+
+            	playerNameList = playerNameList.replace("]","");
+            	playerNameList = playerNameList.replace("[","");
+            	playerNameList.replace("\n","");
+            	playerArrayNameList = this.playerNameList.split(", ");
+
+            	currentPlayerCount = playerArrayList.length;
+            }
         </script>
     </head>
     <body onload="getChats();">
