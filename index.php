@@ -21,18 +21,18 @@
     </head>
     <body>
         <!-- Shamelessly snatched from W3 -->
-        <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn">CraftBack Servers</button>
-                <div class="dropdown-content">
+        <div class="w3-container" id="myTopnav">
+            <a href="#home" class="w3-button w3-green">Home</a>
+            <div class="w3-bar">
+                <div class="w3-dropdown-hover">
+                <button class="w3-button">CraftBack Servers</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
                     <?php
                         for($i = 0; $i < sizeof($id); $i ++){
                     ?>
-                    <a href="servers.php?fingerprint=<?php echo $fingerprints[$i]; ?>"><?php echo $names[$i]; ?></a>
+                    <a href="servers.php?fingerprint=<?php echo $fingerprints[$i]; ?>" class="w3-bar-item w3-button"><?php echo $names[$i]; ?></a>
                     <?php } ?>
                 </div>
-            </div>
             <div class="w3-dropdown-hover">
                 <button class="w3-button">Git</button>
                 <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -41,6 +41,8 @@
                 </div>
             </div>
         </div>
+        </div>
+
         <?php
             for($i = 0; $i < sizeof($id); $i++){
                 if(($i % 3 == 0) && ($i > 2)) {
