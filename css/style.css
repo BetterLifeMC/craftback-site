@@ -1,19 +1,14 @@
 #logConsole{
-    display: block;
     overflow-y: scroll;
-    z-index: -1;
-    height: 90vh;
+    max-height: 92.25vh;
     padding: 10px;
     font-family: Consolas;
 
 }
 div.messageBox{
   width: 100%;
-  height: 4.5%;
   background-color: #333;
-  display:block;
-  position:absolute;
-  padding: 5px;
+  padding: 1px;
 
 }
 input.messageBox{
@@ -25,11 +20,8 @@ input.messageBox{
 div.playerBox{
     float:right;
     text-align: left;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-    height: 95vh;
-    max-height: 95vh;
+    padding: 20px;
+    max-height: 80vh;
     overflow-y: scroll;
     font-size: 16px;
   }
