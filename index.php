@@ -50,7 +50,7 @@
         </div>
         <?php
             for($i = 0; $i < sizeof($id); $i++){
-                if(($i % 3 == 0) && ($i > 2)) {
+                if(($i) % 3 == 0) {
         ?>
         <div id="main" class="w3-row">
             <?php
@@ -70,10 +70,9 @@
                 <br>
             </div>
             <?php
-                if(($i % 3 == 0) && ($i > 2)){
+                if(($i + 1) % 3 == 0){
              ?>
             </div>
         <?php } } ?>
-        </div>
     </body>
 </html>
