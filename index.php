@@ -23,7 +23,7 @@
         <!-- Shamelessly snatched from W3 -->
         <div class="w3-container">
             <div class="w3-bar">
-                <a href="#home" class="w3-button w3-green w3-bar-block">Home</a>
+                <a href="#home" class="w3-button w3-green w3-bar-item">Home</a>
 
                 <div class="w3-dropdown-hover">
                     <button class="w3-button">CraftBack Servers</button>
