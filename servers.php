@@ -13,7 +13,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/style.css"> g
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
         <title>CraftBack - <?php echo $names[0]; ?></title>
@@ -135,6 +135,7 @@
                     <a href="https://gitlab.com/gt3ch1/craftback-site" class="w3-bar-item w3-button" >CraftBack UI</a>
                 </div>
             </div>
+            <button class="w3-button"><i class="fas fa-adjust"></i></button>
         </div>
 
         <div id="main" class="w3-row w3-animate-opacity" style="width=300px;">
