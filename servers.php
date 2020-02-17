@@ -127,13 +127,15 @@
     <body onload="getChats();getPlayerInfo();">
         <!-- Shamelessly snatched from W3 -->
         <div>
-            <div class="topnav" id="myTopnav">
-                <a href="/craftback-site" class="w3-button">Home</a>
-                <div>
-                    <button class="w3-button">Git</button>
-                    <div class="w3-dropdown-content">
-                        <a href="https://gitlab.com/gt3ch1/craftback">CraftBack</a>
-                        <a href="https://gitlab.com/gt3ch1/craftback-site">CraftBack UI</a>
+            <div>
+                <div class="w3-bar w3-metro-darken">
+                    <a href="#home" class="w3-button w3-green w3-bar-item">Home</a>
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-button">Git</button>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                            <a href="https://gitlab.com/gt3ch1/craftback" class="w3-bar-item w3-button" >CraftBack</a>
+                            <a href="https://gitlab.com/gt3ch1/craftback-site" class="w3-bar-item w3-button" >CraftBack UI</a>
+                        </div>
                     </div>
                 </div>
             </div>
