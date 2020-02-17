@@ -127,10 +127,10 @@
         <!-- Shamelessly snatched from W3 -->
         <div>
             <div class="topnav" id="myTopnav">
-                <a href="/craftback-site" class="active">Home</a>
+                <a href="/craftback-site" class="w3-button">Home</a>
                 <div class="dropdown">
-                    <button class="dropbtn">Git</button>
-                    <div class="dropdown-content">
+                    <button class="w3-button">Git</button>
+                    <div class="w3-dropdown-content">
                         <a href="https://gitlab.com/gt3ch1/craftback">CraftBack</a>
                         <a href="https://gitlab.com/gt3ch1/craftback-site">CraftBack UI</a>
                     </div>
