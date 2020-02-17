@@ -161,7 +161,7 @@
 
     </body>
     <?php
-        if(isset($_GET['currentPlayerCount'])){
+        if(($_GET['currentPlayerCount']) == 1){
             return ?><script>document.write(currentPlayerCount);</script><?php ;
         }
     ?>
