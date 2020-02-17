@@ -4,7 +4,8 @@
     z-index: -1;
     height: 90vh;
     padding: 10px;
-    font-family: serif;
+    font-family: Consolas;
+
 }
 div.messageBox{
   width: 100%;
@@ -26,10 +27,14 @@ input.messageBox{
 div.playerBox{
     float:right;
     text-align: left;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    }
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    height: 95vh;
+    max-height: 95vh;
+    overflow-y: scroll;
+    font-size: 16px;
+  }
 div#allPlayers{
    text-align: left;
    padding-right: 10px;
