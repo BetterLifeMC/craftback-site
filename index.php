@@ -22,8 +22,9 @@
     <body>
         <!-- Shamelessly snatched from W3 -->
         <div class="w3-container">
-            <a href="#home" class="w3-button w3-green">Home</a>
             <div class="w3-bar">
+                <a href="#home" class="w3-button w3-green">Home</a>
+
                 <div class="w3-dropdown-hover">
                     <button class="w3-button">CraftBack Servers</button>
                     <div class="w3-dropdown-content w3-bar-block w3-card-4">
