@@ -29,7 +29,7 @@ function loadDarkMode(){
         length = document.getElementsByTagName("a").length;
         for (var i = 0; i < length; i++) {
             document.getElementsByTagName("a")[i].style.backgroundColor = "#fff";
-
+            document.getElementsByTagName("a")[i].style.color = "#000";
         }
     }
 }
