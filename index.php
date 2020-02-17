@@ -1,7 +1,7 @@
 <?php
     include('lib/sql.php');
     $sqlquery = new doSQL();
-    $sqlquery->doSQLStuff("SELECT * FROM `Servers`");
+    $sqlquery->doSQLStuff("SELECT * FROM `Servers` ORDER BY name ASC");
     $names = $sqlquery->get_names();
     $hostnames = $sqlquery->get_hostnames();
     $ports = $sqlquery->get_ports();
