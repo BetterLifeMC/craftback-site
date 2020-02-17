@@ -128,7 +128,7 @@
         <div>
             <div class="topnav" id="myTopnav">
                 <a href="/craftback-site" class="w3-button">Home</a>
-                <div class="dropdown">
+                <div>
                     <button class="w3-button">Git</button>
                     <div class="w3-dropdown-content">
                         <a href="https://gitlab.com/gt3ch1/craftback">CraftBack</a>
