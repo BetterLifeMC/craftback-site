@@ -13,9 +13,7 @@ div.messageBox{
   background-color: #333;
   display:block;
   position:absolute;
-  bottom: 0;
   padding: 5px;
-  z-index:1;
 
 }
 input.messageBox{
