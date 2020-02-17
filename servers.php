@@ -125,7 +125,7 @@
         </script>
     </head>
     <body onload="getChats();getPlayerInfo();">
-        <div class="w3-bar w3-metro-darken w3-card-4">
+        <div class="w3-bar w3-metro-darken">
             <a href="./index.php" class="w3-button w3-green w3-bar-item">Home</a>
             <div class="w3-dropdown-hover">
                 <button class="w3-button">Git</button>
