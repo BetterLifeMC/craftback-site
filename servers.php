@@ -160,4 +160,9 @@
         </div>
 
     </body>
+    <?php
+        if(isset($_GET['currentPlayerCount'])){
+            return ?><script>document.write(currentPlayerCount);</script><?php ;
+        }
+    ?>
 </html>
