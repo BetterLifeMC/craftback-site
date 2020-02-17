@@ -125,39 +125,34 @@
         </script>
     </head>
     <body onload="getChats();getPlayerInfo();">
-        <!-- Shamelessly snatched from W3 -->
+        <div class="w3-bar w3-metro-darken">
+            <a href="#home" class="w3-button w3-green w3-bar-item">Home</a>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Git</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="https://gitlab.com/gt3ch1/craftback" class="w3-bar-item w3-button" >CraftBack</a>
+                    <a href="https://gitlab.com/gt3ch1/craftback-site" class="w3-bar-item w3-button" >CraftBack UI</a>
+                </div>
+            </div>
+        </div>
+        <div id="main" class="w3-row" style="width=300px!important;">
+            <div class="logConsole w3-threequarter w3-row">
+                <div id="logConsole" style="white-space:pre;"></div>
+            </div>
+            <div class="playerBox w3-quarter w3-container w3-row">
+                <span>Server Name: <?php echo $names[0]; ?></span>
+                <br>
+                <span>Current Players: (<span id="currentPlayerCount"></span>/<?php echo $maxplayers[0]; ?>)</span>
+                <hr>
+                <div id="allPlayers">
+                </div>
+            </div>
+        </div>
         <div>
-            <div>
-                <div class="w3-bar w3-metro-darken">
-                    <a href="#home" class="w3-button w3-green w3-bar-item">Home</a>
-                    <div class="w3-dropdown-hover">
-                        <button class="w3-button">Git</button>
-                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                            <a href="https://gitlab.com/gt3ch1/craftback" class="w3-bar-item w3-button" >CraftBack</a>
-                            <a href="https://gitlab.com/gt3ch1/craftback-site" class="w3-bar-item w3-button" >CraftBack UI</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="main">
-                <div class="logConsole w3-threequarter">
-                    <div id="logConsole" style="white-space:pre;"></div>
-                </div>
-                <div class="playerBox w3-quarter w3-container">
-                    <span>Server Name: <?php echo $names[0]; ?></span>
-                    <br>
-                    <span>Current Players: (<span id="currentPlayerCount"></span>/<?php echo $maxplayers[0]; ?>)</span>
-                    <hr>
-                    <div id="allPlayers">
-                    </div>
-                </div>
-            </div>
-            <div class="w3-row">
-                <div class="messageBox w3-rest">
-                    <form>
-                        <input id="messageBox" class="messageBox" type="text" name="message" />
-                    </form>
-                </div>
+            <div class="messageBox w3-rest">
+                <form>
+                    <input id="messageBox" class="messageBox" type="text" name="message" />
+                </form>
             </div>
         </div>
     </body>
