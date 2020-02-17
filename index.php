@@ -23,7 +23,7 @@
     <body>
         <!-- Shamelessly snatched from W3 -->
         <div>
-            <div class="w3-bar">
+            <div class="w3-bar w3-metro-darken">
                 <a href="#home" class="w3-button w3-green w3-bar-item">Home</a>
 
                 <div class="w3-dropdown-hover">
