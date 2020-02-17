@@ -33,11 +33,11 @@
                     <?php } ?>
                 </div>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn">Git</button>
-                <div class="dropdown-content">
-                    <a href="https://gitlab.com/gt3ch1/craftback">CraftBack</a>
-                    <a href="https://gitlab.com/gt3ch1/craftback-site">CraftBack UI</a>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Git</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="https://gitlab.com/gt3ch1/craftback" class="w3-bar-item w3-button" >CraftBack</a>
+                    <a href="https://gitlab.com/gt3ch1/craftback-site" class="w3-bar-item w3-button" >CraftBack UI</a>
                 </div>
             </div>
         </div>
