@@ -138,7 +138,7 @@
 
         <div id="main" class="w3-row w3-animate-opacity" style="width=300px;">
             <div>
-                <div class="messageBox w3-rest w3-hover-shadow">
+                <div class="messageBox w3-threequarter w3-hover-shadow">
                     <form>
                         <input id="messageBox" class="messageBox " placeholder="Command »" type="text" name="message" />
                     </form>
