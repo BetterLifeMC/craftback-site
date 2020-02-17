@@ -136,11 +136,11 @@
                     </div>
                 </div>
             </div>
-            <div id="main">
-                <div class="logConsole w3-threequarter">
+            <div id="main" class="w3-row">
+                <div class="logConsole w3-container w3-threequarter">
                     <pre id="logConsole"></pre>
                 </div>
-                <div class="playerBox w3-quarter">
+                <div class="playerBox w3-quarter w3-container">
                     <span>Server Name: <?php echo $names[0]; ?></span>
                     <br>
                     <span>Current Players: (<span id="currentPlayerCount"></span>/<?php echo $maxplayers[0]; ?>)</span>
@@ -148,7 +148,9 @@
                     <div id="allPlayers">
                     </div>
                 </div>
-                <div class="messageBox">
+            </div>
+            <div class="w3-row">
+                <div class="messageBox w3-rest">
                     <form>
                         <input id="messageBox" class="messageBox" type="text" name="message" />
                     </form>

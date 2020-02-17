@@ -114,11 +114,16 @@
     text-align: left;
   }
 }
-div.logConsole{
-    position: absolute;
+#main{
+  height: 90vh;
+
+}
+#logConsole{
     display: block;
     overflow-y: scroll;
     z-index: -1;
+    height: 90vh;
+    padding: 10px;
 }
 div.logConsole pre{
   color: #333;
@@ -127,6 +132,7 @@ div.logConsole pre{
 }
 div.messageBox{
   width: 100%;
+  height: 4.5%;
   background-color: #aaa;
   display:block;
   position:absolute;
@@ -138,6 +144,8 @@ div.messageBox{
 input.messageBox{
     width: 100%;
     border: 0px;
+    height: 30px;
+    margin: 0 auto;
 }
 div.playerBox{
     float:right;
