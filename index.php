@@ -21,7 +21,7 @@
     </head>
     <body>
         <!-- Shamelessly snatched from W3 -->
-        <div class="w3-container">
+        <div>
             <div class="w3-bar">
                 <a href="#home" class="w3-button w3-green w3-bar-item">Home</a>
 
