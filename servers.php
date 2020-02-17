@@ -151,7 +151,7 @@
         <div>
             <div class="messageBox w3-rest">
                 <form>
-                    <input id="messageBox" class="messageBox w3-metro-darken" type="text" name="message" />
+                    <input id="messageBox" class="messageBox " type="text" name="message" />
                 </form>
             </div>
         </div>
