@@ -115,7 +115,6 @@
   }
 }
 div.logConsole{
-    max-height:89%;
     position: absolute;
     display: block;
     overflow-y: scroll;
@@ -142,7 +141,6 @@ input.messageBox{
 }
 div.playerBox{
     float:right;
-    height: 90%;
     text-align: left;
     padding-left: 10px;
     padding-top: 10px;

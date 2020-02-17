@@ -136,21 +136,23 @@
                     </div>
                 </div>
             </div>
-            <div class="logConsole w3-threequarter">
-                <pre id="logConsole"></pre>
-            </div>
-            <div class="playerBox w3-quarter">
-                <span>Server Name: <?php echo $names[0]; ?></span>
-                <br>
-                <span>Current Players: (<span id="currentPlayerCount"></span>/<?php echo $maxplayers[0]; ?>)</span>
-                <hr>
-                <div id="allPlayers">
+            <div id="main">
+                <div class="logConsole w3-threequarter">
+                    <pre id="logConsole"></pre>
                 </div>
-            </div>
-            <div class="messageBox">
-                <form>
-                    <input id="messageBox" class="messageBox" type="text" name="message" />
-                </form>
+                <div class="playerBox w3-quarter">
+                    <span>Server Name: <?php echo $names[0]; ?></span>
+                    <br>
+                    <span>Current Players: (<span id="currentPlayerCount"></span>/<?php echo $maxplayers[0]; ?>)</span>
+                    <hr>
+                    <div id="allPlayers">
+                    </div>
+                </div>
+                <div class="messageBox">
+                    <form>
+                        <input id="messageBox" class="messageBox" type="text" name="message" />
+                    </form>
+                </div>
             </div>
         </div>
     </body>
