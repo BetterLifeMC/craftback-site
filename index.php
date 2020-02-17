@@ -23,7 +23,7 @@
         <script src="https://kit.fontawesome.com/1be2cd7175.js" crossorigin="anonymous"></script>
 
     </head>
-    <body>
+    <body onload="loadDarkMode();">
         <!-- Shamelessly snatched from W3 -->
         <div>
             <div class="w3-bar w3-metro-darken">
@@ -46,7 +46,7 @@
                         <a href="https://gitlab.com/gt3ch1/craftback-site" class="w3-bar-item w3-button" >CraftBack UI</a>
                     </div>
                 </div>
-                <button class="w3-button" style="float:right;"><i class="fas fa-adjust"></i></button>
+                <button onclick="toggleDarkMode();" class="w3-button" style="float:right;"><i class="fas fa-adjust"></i></button>
             </div>
         </div>
         <?php

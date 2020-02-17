@@ -126,7 +126,7 @@
             }
         </script>
     </head>
-    <body onload="getChats();getPlayerInfo();">
+    <body onload="getChats();getPlayerInfo();loadDarkMode();">
         <div class="w3-bar w3-metro-darken">
             <a href="./index.php" class="w3-button w3-green w3-bar-item">Home</a>
             <div class="w3-dropdown-hover">
@@ -136,7 +136,7 @@
                     <a href="https://gitlab.com/gt3ch1/craftback-site" class="w3-bar-item w3-button" >CraftBack UI</a>
                 </div>
             </div>
-            <button class="w3-button" style="float:right;"><i class="fas fa-adjust"></i></button>
+            <button onclick="toggleDarkMode();" class="w3-button" style="float:right;"><i class="fas fa-adjust"></i></button>
         </div>
 
         <div id="main" class="w3-row w3-animate-opacity" style="width=300px;">
