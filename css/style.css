@@ -1,5 +1,6 @@
 #logConsole{
     overflow-y: scroll;
+    min-height: 80vh;
     max-height: 92.25vh;
     padding: 10px;
     font-family: Consolas;
