@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>CraftBack - <?php echo $names[0]; ?></title>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script>
@@ -128,6 +128,7 @@
     <body onload="getChats();getPlayerInfo();">
         <div class="w3-bar w3-metro-darken">
             <a href="./index.php" class="w3-button w3-green w3-bar-item">Home</a>
+            <i class='fas fa-adjust'></i>
             <div class="w3-dropdown-hover">
                 <button class="w3-button">Git</button>
                 <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -135,7 +136,7 @@
                     <a href="https://gitlab.com/gt3ch1/craftback-site" class="w3-bar-item w3-button" >CraftBack UI</a>
                 </div>
             </div>
-            <button class="w3-button"><i class="fas fa-adjust"></i></button>
+            <button class="w3-button"><i class="fas fa-adjust">
         </div>
 
         <div id="main" class="w3-row w3-animate-opacity" style="width=300px;">
