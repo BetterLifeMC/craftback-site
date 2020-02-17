@@ -135,7 +135,15 @@
                 </div>
             </div>
         </div>
-        <div id="main" class="w3-row" style="width=300px!important;">
+
+        <div id="main" class="w3-row" style="width=300px;">
+            <div>
+                <div class="messageBox w3-rest">
+                    <form>
+                        <input id="messageBox" class="messageBox " type="text" name="message" />
+                    </form>
+                </div>
+            </div>
             <div class="logConsole w3-threequarter w3-row">
                 <div id="logConsole" style="white-space:pre;"></div>
             </div>
@@ -148,12 +156,6 @@
                 </div>
             </div>
         </div>
-        <div>
-            <div class="messageBox w3-rest">
-                <form>
-                    <input id="messageBox" class="messageBox " type="text" name="message" />
-                </form>
-            </div>
-        </div>
+
     </body>
 </html>
