@@ -12,7 +12,8 @@ function loadDarkMode(){
         }
         length = document.getElementsByTagName("a").length;
         for (var i = 0; i < length; i++) {
-            document.getElementsByTagName("a")[i].style.backgroundColor = "#333";
+            document.getElementsByTagName("a")[i].style.backgroundColor = "#111";
+            document.getElementsByTagName("a")[i].style.color = "#aaa";
         }
     }else{
         document.getElementsByTagName("body")[0].style.backgroundColor = "";
@@ -28,6 +29,7 @@ function loadDarkMode(){
         length = document.getElementsByTagName("a").length;
         for (var i = 0; i < length; i++) {
             document.getElementsByTagName("a")[i].style.backgroundColor = "#fff";
+
         }
     }
 }
