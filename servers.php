@@ -19,6 +19,7 @@
         <title>CraftBack - <?php echo $names[0]; ?></title>
         <script src="https://kit.fontawesome.com/1be2cd7175.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/sketch.js"></script>
         <script>
             // Snatched from https://happycoding.io/tutorials/java-server/post#polling-with-ajax
             function getChats(){
