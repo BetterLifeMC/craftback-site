@@ -136,9 +136,15 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
             <div id="main" class="w3-row">
                 <div class="logConsole w3-container w3-threequarter">
                     <pre id="logConsole"></pre>
+=======
+            <div id="main">
+                <div class="logConsole w3-threequarter">
+                    <div id="logConsole" style="white-space:pre;"></div>
+>>>>>>> branch 'master' of https://gitlab.com/gt3ch1/craftback-site
                 </div>
                 <div class="playerBox w3-quarter w3-container">
                     <span>Server Name: <?php echo $names[0]; ?></span>
