@@ -126,7 +126,7 @@
     </head>
     <body onload="getChats();getPlayerInfo();">
         <div class="w3-bar w3-metro-darken w3-card-4">
-            <a href="#home" class="w3-button w3-green w3-bar-item">Home</a>
+            <a href="./index.php" class="w3-button w3-green w3-bar-item">Home</a>
             <div class="w3-dropdown-hover">
                 <button class="w3-button">Git</button>
                 <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -138,9 +138,9 @@
 
         <div id="main" class="w3-row w3-animate-opacity" style="width=300px;">
             <div>
-                <div class="messageBox w3-rest">
+                <div class="messageBox w3-rest w3-hover-shadow">
                     <form>
-                        <input id="messageBox" class="messageBox w3-hover-shadow" placeholder="Command »" type="text" name="message" />
+                        <input id="messageBox" class="messageBox " placeholder="Command »" type="text" name="message" />
                     </form>
                 </div>
             </div>
