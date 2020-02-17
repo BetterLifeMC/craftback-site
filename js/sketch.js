@@ -10,6 +10,10 @@ function loadDarkMode(){
             document.getElementsByTagName("input")[0].style.backgroundColor = "#333"
             document.getElementsByTagName("input")[0].style.color = "#aaa";
         }
+        length = document.getElementsByTagName("a").length;
+        for (var i = 0; i < length; i++) {
+            document.getElementsByTagName("a")[i].style.backgroundColor = "#333";
+        }
     }else{
         document.getElementsByTagName("body")[0].style.backgroundColor = "";
         document.getElementsByTagName("body")[0].style.color = "";
@@ -20,6 +24,10 @@ function loadDarkMode(){
         if(document.getElementsByTagName("input")[0] != undefined){
             document.getElementsByTagName("input")[0].style.backgroundColor = "#fff";
             document.getElementsByTagName("input")[0].style.color = "#000";
+        }
+        length = document.getElementsByTagName("a").length;
+        for (var i = 0; i < length; i++) {
+            document.getElementsByTagName("a")[i].style.backgroundColor = "#fff";
         }
     }
 }
