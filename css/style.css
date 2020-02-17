@@ -115,13 +115,11 @@
   }
 }
 div.logConsole{
-
-    height:90.4%;
+    max-height:89%;
     position: absolute;
     display: block;
-    overflow-y: auto;
-    padding: 20px;
-    margin: 0;
+    overflow-y: scroll;
+    z-index: -1;
 }
 div.logConsole pre{
   color: #333;
@@ -135,6 +133,7 @@ div.messageBox{
   position:absolute;
   bottom: 0;
   padding: 5px;
+  z-index:1;
 
 }
 input.messageBox{
