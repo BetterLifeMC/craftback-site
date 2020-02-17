@@ -138,7 +138,7 @@
             </div>
             <div id="main">
                 <div class="logConsole w3-threequarter">
-                    <pre id="logConsole"></pre>
+                    <div id="logConsole" style="white-space:pre;"></div>
                 </div>
                 <div class="playerBox w3-quarter">
                     <span>Server Name: <?php echo $names[0]; ?></span>
