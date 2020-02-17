@@ -135,7 +135,7 @@
                     <a href="https://gitlab.com/gt3ch1/craftback-site" class="w3-bar-item w3-button" >CraftBack UI</a>
                 </div>
             </div>
-            <button class="w3-button"><i class="fas fa-adjust"></i></button>
+            <button class="w3-button" style="float:right;"><i class="fas fa-adjust"></i></button>
         </div>
 
         <div id="main" class="w3-row w3-animate-opacity" style="width=300px;">
