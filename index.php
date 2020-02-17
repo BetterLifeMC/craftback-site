@@ -1,7 +1,7 @@
 <?php
     include('lib/sql.php');
     $sqlquery = new doSQL();
-    $sqlquery->doSQLStuff("SELECT * FROM `Servers`");
+    $sqlquery->doSQLStuff("SELECT * FROM `Servers` ORDER BY name ASC");
     $names = $sqlquery->get_names();
     $hostnames = $sqlquery->get_hostnames();
     $ports = $sqlquery->get_ports();
@@ -50,7 +50,7 @@
         </div>
         <?php
             for($i = 0; $i < sizeof($id); $i++){
-                if(($i % 3 == 0) && ($i > 2)) {
+                if(($i) % 3 == 0) {
         ?>
         <div id="main" class="w3-row">
             <?php
@@ -70,10 +70,9 @@
                 <br>
             </div>
             <?php
-                if(($i % 3 == 0) && ($i > 2)){
+                if(($i + 1) % 3 == 0){
              ?>
             </div>
         <?php } } ?>
-        </div>
     </body>
 </html>
