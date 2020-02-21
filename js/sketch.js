@@ -56,6 +56,7 @@ function loadServerInfo(HostNameArray, PortArray){
                 },
                 200: function (response) {
                     results.push(response);
+                    console.log(response);
                 }
             },
             error: function (jqXHR, status, errorThrown) {
