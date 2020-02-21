@@ -23,11 +23,12 @@
         <script>
             var currentPorts = ["<?php echo implode('","', $ports); ?>"];
             var serverHostnames ["<?php echo implode('","', $hostnames) ?>"];
+            var results = [];
         </script>
         <script src="https://kit.fontawesome.com/1be2cd7175.js" crossorigin="anonymous"></script>
 
     </head>
-    <body onload="loadDarkMode();loadServerInfo(currentPorts)">
+    <body onload="loadDarkMode();">
         <!-- Shamelessly snatched from W3 -->
         <div>
             <div class="w3-bar w3-metro-darken">
@@ -79,6 +80,6 @@
              ?>
             </div>
         <?php } } ?>
-        Version - 1.4
+
     </body>
 </html>
