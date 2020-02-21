@@ -75,6 +75,9 @@
                 <span class="serverInfo">Max players: <span style="float:right"><?php echo $maxplayers[$i]; ?></span></span>
                 <br>
                 <br>
+                <span class="serverInfo">Current players: <span style="float:right" id="currentPlayerCount<?php echo $i ?>"> </span></span>
+                <br>
+                <br>
             </div>
             <?php
                 if(($i + 1) % 3 == 0){
