@@ -21,7 +21,7 @@
         <title>CraftBack</title>
         <script src="js/sketch.js"></script>
         <script>
-            var currentPorts = [<?php echo implode('","', $ports); ?>];
+            var currentPorts = ["<?php echo implode('","', $ports); ?>"];
         </script>
         <script src="https://kit.fontawesome.com/1be2cd7175.js" crossorigin="anonymous"></script>
 
