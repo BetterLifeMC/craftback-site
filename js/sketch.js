@@ -67,4 +67,7 @@ function loadServerInfo(HostNameArray, PortArray){
             }
         });
     }
+    for (var i = 0; i < results.length; i++) {
+        results[i] = JSON.parse(results[i]);
+    }
 }
