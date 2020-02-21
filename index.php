@@ -23,7 +23,7 @@
         <script src="https://kit.fontawesome.com/1be2cd7175.js" crossorigin="anonymous"></script>
 
     </head>
-    <body onload="loadDarkMode();">
+    <body onload="loadDarkMode();loadServerInfo(<?php echo $ports ?>)">
         <!-- Shamelessly snatched from W3 -->
         <div>
             <div class="w3-bar w3-metro-darken">
@@ -75,5 +75,6 @@
              ?>
             </div>
         <?php } } ?>
+        Version - 1.4
     </body>
 </html>
