@@ -73,9 +73,9 @@
                             alert(404);
                         },
                         200: function (response) {
-                            playerUUIDList = response;
+                            playerUUIDList = JSON.parse(response);
 
-                            currentPlayerCount = playerArrayUUIDList.length;
+                            currentPlayerCount = playerUUIDList.length;
                         }
                     },
                     error: function (jqXHR, status, errorThrown) {
@@ -92,7 +92,7 @@
                             alert(404);
                         },
                         200: function (response) {
-                            playerNameList = response;
+                            playerNameList = JSON.parse(response);
 
                         }
                     },
@@ -104,7 +104,7 @@
                 try{
                     if(playerArrayUUIDList[0].length > 0){
                         for (var i = 0; i < currentPlayerCount; i++) {
-                            document.getElementById("allPlayers").innerHTML += "<span id='playerHead'>" + PlayerArrayNameList[i]+"</span><img src='https://minotar.net/avatar/"+playerArrayUUIDList[i]+"/32.png' id='playerHeadImage' alt='Skin head'></img><br><hr>";
+                            document.getElementById("allPlayers").innerHTML += "<span id='playerHead'>" + playerNameList[i]+"</span><img src='https://minotar.net/avatar/"+playerUUIDList[i]+"/32.png' id='playerHeadImage' alt='Skin head'></img><br><hr>";
                         }
                     }else{
                         currentPlayerCount = 0;
