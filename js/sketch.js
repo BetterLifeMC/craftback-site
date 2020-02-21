@@ -42,5 +42,5 @@ function toggleDarkMode(){
     loadDarkMode();
 }
 function loadServerInfo(ServerArray){
-    alert(ServerArray)
+    alert(ServerArray.toString());
 }
