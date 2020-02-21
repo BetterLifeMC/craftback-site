@@ -58,7 +58,7 @@ function loadServerInfo(HostNameArray, PortArray){
                     response = response.replace("[","");
                     response = response.replace("]","");
                     response = response.replace(" ","")
-                    response.split(",");
+                    response = response.split(",");
                     results.push(response);
                     console.log(response);
                 }
