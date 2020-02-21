@@ -41,23 +41,25 @@ function toggleDarkMode(){
     }
     loadDarkMode();
 }
-function loadServerInfo(HostNameArray, ServerArray){
+function loadServerInfo(HostNameArray, PortArray){
 
     //TODO:  Implement this correctly.  This be bad.
-    $.get({
-        url: 'http://:<?php echo $ports[0]; ?>/getPlayerNames',
-        dataType: 'text',
-        type: 'GET',
-        async: true,
-        statusCode: {
-            404: function (response) {
-                alert(404);
+    for (var i = 0; i < HostNameArray.length; i++) {
+        $.get({
+            url: 'http://'+HostNameArray[i]+':'+PortArray[i]+'/getPlayerNames',
+            dataType: 'text',
+            type: 'GET',
+            async: true,
+            statusCode: {
+                404: function (response) {
+                    alert(404);
+                },
+                200: function (response) {
+                    results.push(response);
+                }
             },
-            200: function (response) {
-                results.push(response);
+            error: function (jqXHR, status, errorThrown) {
             }
-        },
-        error: function (jqXHR, status, errorThrown) {
-        }
-    });
+        });
+    }
 }
