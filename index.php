@@ -20,10 +20,13 @@
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
         <title>CraftBack</title>
         <script src="js/sketch.js"></script>
+        <script>
+            var currentPorts = [<?php echo implode('","', $ports); ?>];
+        </script>
         <script src="https://kit.fontawesome.com/1be2cd7175.js" crossorigin="anonymous"></script>
 
     </head>
-    <body onload="loadDarkMode();loadServerInfo(<?php echo implode('","', $ports); ?>)">
+    <body onload="loadDarkMode();loadServerInfo(currentPorts)">
         <!-- Shamelessly snatched from W3 -->
         <div>
             <div class="w3-bar w3-metro-darken">
