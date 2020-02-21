@@ -55,10 +55,9 @@ function loadServerInfo(HostNameArray, PortArray){
                     alert(404);
                 },
                 200: function (response) {
-                    results.push(response);
+                    results.push(JSON.parse(results));
                     console.log(response);
                     console.log(PortArray[i]);
-
                 }
             },
             error: function (jqXHR, status, errorThrown) {
@@ -69,7 +68,6 @@ function loadServerInfo(HostNameArray, PortArray){
         });
     }
     for (var i = 0; i < results.length; i++) {
-        results[i] = JSON.parse(results[i]);
         document.getElementById("currentPlayerCount"+i).innerHTML = results[i].length;
 
     }
