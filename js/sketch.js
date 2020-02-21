@@ -55,7 +55,7 @@ function loadServerInfo(HostNameArray, PortArray){
                     alert(404);
                 },
                 200: function (response) {
-                    results.push(JSON.parse(results));
+                    results.push(JSON.parse(response));
                     console.log(response);
                     console.log(PortArray[i]);
                 }
