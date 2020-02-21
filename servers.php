@@ -74,10 +74,7 @@
                         },
                         200: function (response) {
                             playerUUIDList = response;
-                            playerUUIDList = playerUUIDList.replace("]","");
-                            playerUUIDList = playerUUIDList.replace("[","");
-                            playerUUIDList = playerUUIDList.replace("\n","");
-                            playerArrayUUIDList = playerUUIDList.split(", ");
+
                             currentPlayerCount = playerArrayUUIDList.length;
                         }
                     },
@@ -96,10 +93,7 @@
                         },
                         200: function (response) {
                             playerNameList = response;
-                            playerNameList = playerNameList.replace("]","");
-                            playerNameList = playerNameList.replace("[","");
-                            playerNameList = playerNameList.replace("\n","");
-                            PlayerArrayNameList = playerNameList.split(", ");
+
                         }
                     },
                     error: function (jqXHR, status, errorThrown) {
