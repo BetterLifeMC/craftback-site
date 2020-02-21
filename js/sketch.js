@@ -49,22 +49,20 @@ function loadServerInfo(HostNameArray, PortArray){
             url: 'http://'+HostNameArray[i]+':'+PortArray[i]+'/getPlayerNames',
             dataType: 'text',
             type: 'GET',
-            async: true,
+            async: false,
             statusCode: {
                 404: function (response) {
                     alert(404);
                 },
                 200: function (response) {
-                    response = response.replace("[","");
-                    response = response.replace("]","");
-                    response = response.replace(" ","")
-                    response = response.split(",");
                     results.push(response);
                     console.log(response);
+                    console.log(PortArray[i]);
+
                 }
             },
             error: function (jqXHR, status, errorThrown) {
-                console.log("Server " + HostNameArray[i]+':'+PortArray[i] + "Failed to respond on time!");
+                console.log("Server " + HostNameArray[i]+':'+PortArray[i] + " Failed to respond on time!");
                 results.push("0");
             }
         });
