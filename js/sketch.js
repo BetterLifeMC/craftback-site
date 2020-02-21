@@ -63,7 +63,7 @@ function loadServerInfo(HostNameArray, PortArray){
             },
             error: function (jqXHR, status, errorThrown) {
                 console.log("Server " + HostNameArray[i]+':'+PortArray[i] + " Failed to respond on time!");
-                results.push(JSON.parse('["0"]'));
+                results.push([0]);
             }
         });
     }
