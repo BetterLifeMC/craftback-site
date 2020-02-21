@@ -55,11 +55,15 @@ function loadServerInfo(HostNameArray, PortArray){
                     alert(404);
                 },
                 200: function (response) {
+                    response = response.replace("[","");
+                    response = response.replace("]","");
                     results.push(response);
                     console.log(response);
                 }
             },
             error: function (jqXHR, status, errorThrown) {
+                console.log("Server " + HostNameArray[i]+':'+PortArray[i] + "Failed to respond on time!");
+                results.push("0");
             }
         });
     }
