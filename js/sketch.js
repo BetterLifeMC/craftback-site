@@ -49,7 +49,7 @@ function loadServerInfo(HostNameArray, PortArray){
             url: 'http://'+HostNameArray[i]+':'+PortArray[i]+'/getPlayerNames',
             dataType: 'text',
             type: 'GET',
-            async: true,
+            async: false,
             statusCode: {
                 404: function (response) {
                     alert(404);
