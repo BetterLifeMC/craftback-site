@@ -18,11 +18,11 @@ function loadDarkMode(){
         document.getElementById("messageBox").style.border = "1px solid #aaa";
         $("#messageBox").hover(function() {
             $(this).css(
-                "box-shadow", "-5px 10px 15px #888"
+                "box-shadow", "0px 10px 10px #555"
             );
             }, function() {
             $(this).css(
-                "box-shadow", "0px 0px 0px #aaa"
+                "box-shadow", "0px 0px 0px #555"
             );
         });
     }else{
