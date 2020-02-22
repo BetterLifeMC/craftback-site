@@ -25,6 +25,9 @@
             var serverPorts = ["<?php echo implode('","', $ports); ?>"];
             var serverHostnames = ["<?php echo implode('","', $hostnames) ?>"];
             var results = [];
+            $(document).ready(function(){
+                loadServerInfo(serverHostnames, serverPorts);
+            });
         </script>
         <script src="https://kit.fontawesome.com/1be2cd7175.js" crossorigin="anonymous"></script>
 
