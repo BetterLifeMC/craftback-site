@@ -26,7 +26,7 @@
             var serverHostnames = ["<?php echo implode('","', $hostnames) ?>"];
             var results = [];
             $( document ).ready(function() {
-                document.getElementById("bigcontainer").style.visibility ="visible"
+                $('#bigcontainer').fadeIn(800);
             });
         </script>
         <script src="https://kit.fontawesome.com/1be2cd7175.js" crossorigin="anonymous"></script>
@@ -58,7 +58,7 @@
                 <button onclick="toggleDarkMode();" class="w3-button" style="float:right;"><i class="fas fa-adjust"></i></button>
             </div>
         </div>
-        <div id="bigcontainer" style="visibility:hidden;">
+        <div id="bigcontainer" style="display: none;">
 
         <?php
             for($i = 0; $i < sizeof($id); $i++){
