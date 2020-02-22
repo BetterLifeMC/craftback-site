@@ -25,7 +25,9 @@
             var serverPorts = ["<?php echo implode('","', $ports); ?>"];
             var serverHostnames = ["<?php echo implode('","', $hostnames) ?>"];
             var results = [];
+            $( document ).ready(function() {
 
+            });
         </script>
         <script src="https://kit.fontawesome.com/1be2cd7175.js" crossorigin="anonymous"></script>
 
@@ -60,31 +62,33 @@
             for($i = 0; $i < sizeof($id); $i++){
                 if(($i) % 3 == 0) {
         ?>
-        <div id="main" class="w3-row">
-            <?php
-                }
-            ?>
-            <div class="w3-third w3-container info">
-                <h2><?php echo $names[$i]; ?></h2>
-                <hr>
-                <span class="serverInfo">CraftBack Version: <span style="float:right"><?php echo $versions[$i]; ?></span></span>
-                <br>
-                <br>
-                <span class="serverInfo">Server hostname: <span style="float:right"><?php echo $hostnames[$i]; ?></span></span>
-                <br>
-                <br>
-                <span class="serverInfo">Max players: <span style="float:right"><?php echo $maxplayers[$i]; ?></span></span>
-                <br>
-                <br>
-                <span class="serverInfo">Current players: <span style="float:right" id="currentPlayerCount<?php echo $i ?>"> </span></span>
-                <br>
-                <br>
-            </div>
-            <?php
-                if(($i + 1) % 3 == 0){
-             ?>
-            </div>
-        <?php } } ?>
+        <div id="bigcontainer">
+            <div id="main" class="w3-row">
+                <?php
+                    }
+                ?>
+                <div class="w3-third w3-container info">
+                    <h2><?php echo $names[$i]; ?></h2>
+                    <hr>
+                    <span class="serverInfo">CraftBack Version: <span style="float:right"><?php echo $versions[$i]; ?></span></span>
+                    <br>
+                    <br>
+                    <span class="serverInfo">Server hostname: <span style="float:right"><?php echo $hostnames[$i]; ?></span></span>
+                    <br>
+                    <br>
+                    <span class="serverInfo">Max players: <span style="float:right"><?php echo $maxplayers[$i]; ?></span></span>
+                    <br>
+                    <br>
+                    <span class="serverInfo">Current players: <span style="float:right" id="currentPlayerCount<?php echo $i ?>"> </span></span>
+                    <br>
+                    <br>
+                </div>
+                <?php
+                    if(($i + 1) % 3 == 0){
+                 ?>
+                </div>
+            <?php } } ?>
+        </div>
 
     </body>
 </html>

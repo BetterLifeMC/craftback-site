@@ -41,7 +41,7 @@ function toggleDarkMode(){
     }
     loadDarkMode();
 }
-async function loadServerInfo(HostNameArray, PortArray){
+function loadServerInfo(HostNameArray, PortArray){
 
     //TODO:  Make this so it doesn't hang when a server doesn't load properly.
     for (var i = 0; i < HostNameArray.length; i++) {
