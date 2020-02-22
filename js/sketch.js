@@ -16,8 +16,8 @@ function loadDarkMode(){
             document.getElementsByTagName("a")[i].style.color = "#aaa";
         }
     }else{
-        document.getElementsByTagName("body")[0].style.backgroundColor = "";
-        document.getElementsByTagName("body")[0].style.color = "";
+        document.getElementsByTagName("body")[0].style.backgroundColor = "#fff";
+        document.getElementsByTagName("body")[0].style.color = "#000";
         var length = document.getElementsByClassName("info").length;
         for (var i = 0; i < length; i++) {
             document.getElementsByClassName("info")[i].style.border = "1px solid #fff";
