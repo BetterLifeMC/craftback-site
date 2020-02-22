@@ -79,17 +79,16 @@ function loadServerInfo(HostNameArray, PortArray){
                     results.push(JSON.parse(response));
                     console.log(response);
                     console.log(PortArray[i]);
+                    document.getElementById("currentPlayerCount"+i).innerHTML = results[i].length;
                 }
             },
             error: function (jqXHR, status, errorThrown) {
                 console.log("Server " + HostNameArray[i]+':'+PortArray[i] + " Failed to respond on time!");
                 results.push([0]);
                 results[i] = [];
+                document.getElementById("currentPlayerCount"+i).innerHTML = results[i].length;
             }
         });
     }
-    for (var i = 0; i < results.length; i++) {
-        document.getElementById("currentPlayerCount"+i).innerHTML = results[i].length;
 
-    }
 }
