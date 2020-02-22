@@ -24,6 +24,7 @@
         <script>
             var serverPorts = ["<?php echo implode('","', $ports); ?>"];
             var serverHostnames = ["<?php echo implode('","', $hostnames) ?>"];
+            results = [];
             setTimeout(loadServerInfo(serverHostnames, serverPorts), 1000);
 
         </script>
