@@ -43,7 +43,7 @@ function toggleDarkMode(){
 }
 async function loadServerInfo(HostNameArray, PortArray){
 
-    //TODO:  Implement this correctly.  This be bad.
+    //TODO:  Make this so it doesn't hang when a server doesn't load properly.
     for (var i = 0; i < HostNameArray.length; i++) {
         $.get({
             url: 'http://'+HostNameArray[i]+':'+PortArray[i]+'/getPlayerNames',
