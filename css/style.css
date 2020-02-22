@@ -12,8 +12,8 @@ div.messageBox{
   animation-duration: 1s;
 
 }
-body{
-    animation-duration: 1s;
+#bigcontainer{
+     transition: visibility 1s ease-in;
 }
 input.messageBox{
     width: 100%;
