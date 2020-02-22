@@ -26,7 +26,7 @@
             var serverHostnames = ["<?php echo implode('","', $hostnames) ?>"];
             var results = [];
             $( document ).ready(function() {
-
+                document.getElementById("bigcontainer").style.visibility ="visible"
             });
         </script>
         <script src="https://kit.fontawesome.com/1be2cd7175.js" crossorigin="anonymous"></script>
@@ -62,7 +62,7 @@
             for($i = 0; $i < sizeof($id); $i++){
                 if(($i) % 3 == 0) {
         ?>
-        <div id="bigcontainer">
+        <div id="bigcontainer" style="visibility:hidden;">
             <div id="main" class="w3-row">
                 <?php
                     }
