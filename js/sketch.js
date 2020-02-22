@@ -50,6 +50,7 @@ async function loadServerInfo(HostNameArray, PortArray){
             dataType: 'text',
             type: 'GET',
             async: false,
+            timeout: 200,
             statusCode: {
                 404: function (response) {
                     alert(404);
