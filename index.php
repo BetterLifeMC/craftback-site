@@ -58,11 +58,12 @@
                 <button onclick="toggleDarkMode();" class="w3-button" style="float:right;"><i class="fas fa-adjust"></i></button>
             </div>
         </div>
+        <div id="bigcontainer" style="visibility:hidden;">
+
         <?php
             for($i = 0; $i < sizeof($id); $i++){
                 if(($i) % 3 == 0) {
         ?>
-        <div id="bigcontainer" style="visibility:hidden;">
             <div id="main" class="w3-row">
                 <?php
                     }
