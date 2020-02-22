@@ -12,7 +12,9 @@ div.messageBox{
   animation-duration: 1s;
 
 }
-
+body{
+    background-color: #000;
+}
 input.messageBox{
     width: 100%;
     border: 0px;
