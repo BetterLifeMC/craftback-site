@@ -35,7 +35,7 @@
         <script src="https://kit.fontawesome.com/1be2cd7175.js" crossorigin="anonymous"></script>
 
     </head>
-    <body onload="loadDarkMode();">
+    <body>
         <!-- Shamelessly snatched from W3 -->
         <div>
             <div class="w3-bar w3-metro-darken">
