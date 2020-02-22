@@ -41,6 +41,16 @@ function loadDarkMode(){
             document.getElementsByTagName("a")[i].style.backgroundColor = "#fff";
             document.getElementsByTagName("a")[i].style.color = "#000";
         }
+        document.getElementById("messageBox").style.border = "1px solid #aaa";
+        $("#messageBox").hover(function() {
+            $(this).css(
+                "box-shadow", "-5px 10px 15px #888"
+            );
+            }, function() {
+            $(this).css(
+                "box-shadow", "0px 0px 0px #aaa"
+            );
+        });
     }
 }
 function toggleDarkMode(){
