@@ -3,6 +3,10 @@
 }
 :root{
     --background: #273859;
+    --background-accent: #7686A6;
+    --color-1: #1D734B;
+    --color-2: #32A670;
+    --color-4: #D9D2B0;
 }
 #logConsole{
     overflow-y: scroll;
