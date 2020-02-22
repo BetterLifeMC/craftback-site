@@ -14,6 +14,8 @@ div.messageBox{
 }
 body{
     background-color: #000;
+    transition: background-color 1s ease;
+    transition: color 1s ease;
 }
 input.messageBox{
     width: 100%;
@@ -47,6 +49,7 @@ div#allPlayers{
     background-color: #4E90BF;
     color:white;
     border: 1px solid #fff;
+    transition: border-color 1s ease;
 }
 span.serverInfo{
     font-size: 16px;
