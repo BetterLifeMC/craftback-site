@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" style="animation-duration: 1s;">
+<html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
@@ -12,16 +12,10 @@
         <title>CraftBack</title>
 
         <script>
-            results = [];
-            $( document ).ready(function() {
-                console.log( "ready!" );
-                addServersToMainPage();
-                addServersToNav();
-                setTimeout(loadServerInfo(serverHostnames, serverPorts), 1000);
-            });
+            
         </script>
     </head>
-    <body>
+    <body onload="getChats();getPlayerInfo();">
         <div>
             <div class="w3-bar topbar">
                 <a href="./index.html" class="w3-button w3-green w3-bar-item">Home</a>
@@ -40,7 +34,26 @@
                 </div>
             </div>
         </div>
-        <div id="bigcontainer"></div>
+        <div id="main" class="w3-row w3-animate-opacity" style="width=300px;">
+            <div>
+                <div class="messageBox w3-threequarter w3-hover-shadow">
+                    <form>
+                        <input id="messageBox" class="messageBox " placeholder="Command »" type="text" name="message" />
+                    </form>
+                </div>
+            </div>
+            <div class="logConsole w3-threequarter w3-row">
+                <div id="logConsole" style="white-space:pre;"></div>
+            </div>
+            <div class="playerBox w3-quarter w3-container w3-row">
+                <span>Server Name: <?php echo $names[0]; ?></span>
+                <br>
+                <span>Current Players: (<span id="currentPlayerCount"></span>/<?php echo $maxplayers[0]; ?>)</span>
+                <hr>
+                <div id="allPlayers">
+                </div>
+            </div>
         </div>
+
     </body>
 </html>
