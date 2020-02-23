@@ -21,7 +21,8 @@
 #main{
       background-color: var(--background);
       color: var(--color-4);
-      padding-left: calc(3%)
+      padding-left: calc(3%);
+      padding-right: calc(3%);
 }
 
 body{
@@ -38,7 +39,7 @@ input.messageBox{
 }
 div.playerBox{
     float:right;
-    text-align: left;
+    text-align: center;
     padding: 20px;
     max-height: 80vh;
     font-size: 16px;
