@@ -9,12 +9,10 @@
         <script src="https://kit.fontawesome.com/1be2cd7175.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="js/servers.js"></script>
-        
+
         <title>CraftBack</title>
 
         <script>
-            var serverPorts = ["<?php echo implode('","', $ports); ?>"];
-            var serverHostnames = ["<?php echo implode('","', $hostnames) ?>"];
             results = [];
             $( document ).ready(function() {
                 console.log( "ready!" );

@@ -1,6 +1,0 @@
-{ "servers" : [
-    {
-        "fingerprint":"John" , "hostname":"Doe", "port":"8080"
-    }
-    ]
-}
