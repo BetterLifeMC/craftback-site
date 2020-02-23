@@ -1,22 +1,11 @@
-<?php
-    include('lib/sql.php');
-    $sqlquery = new doSQL();
-    $sqlquery->doSQLStuff("SELECT * FROM `Servers` ORDER BY name ASC");
-    $names = $sqlquery->get_names();
-    $hostnames = $sqlquery->get_hostnames();
-    $ports = $sqlquery->get_ports();
-    $fingerprints = $sqlquery->get_fingerprints();
-    $versions = $sqlquery->get_versions();
-    $maxplayers = $sqlquery->get_maxplayers();
-    $id = $sqlquery->get_id();
 
- ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr" style="animation-duration: 1s;">
     <head>
         <meta charset="utf-8">
         <?php include('lib/headers.php'); ?>
         <title>CraftBack</title>
+        <script src="js/servers.js"></script>
         <script>
             var serverPorts = ["<?php echo implode('","', $ports); ?>"];
             var serverHostnames = ["<?php echo implode('","', $hostnames) ?>"];
