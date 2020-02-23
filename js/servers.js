@@ -24,7 +24,7 @@ for (var i = 0; i < servers["servers"].length; i++) {
 function addServersToNav(){
     for (var i = 0; i < servers["servers"].length; i++) {
         document.getElementById("serverDropdownList").innerHTML +=
-            '<a href="servers.html?'+servers["servers"][i].fingerprint+
+            '<a href="servers.html?fingerprint='+servers["servers"][i].fingerprint+
             '" class="w3-bar-item w3-button"> '+servers["servers"][i].name+'</a>';
     }
 }
@@ -63,11 +63,14 @@ $.urlParam = function(name){
        return results[1] || 0;
     }
 }
+index = serverFingerPrints.indexOf($.urlParam("fingerprint"));
+hostname = serverHostnames[index];
+port = serverPorts[index];
+console.log("Server fingerprint index: " + index);
+
 function getChats(){
-    index = serverFingerPrints.indexOf($.urlParam("fingerprint"));
-    console.log("Server fingerprint index: " + index);
     $.get({
-        url: 'http://<?php echo $hostnames[0]; ?>:<?php echo $ports[0]; ?>/getLog',
+        url: 'http://'+hostname+':'+port+'/getLog',
         dataType: 'text',
         type: 'GET',
         async: true,
@@ -89,7 +92,7 @@ $(function () {
         e.preventDefault();
         $.ajax({
             type: 'get',
-            url: 'http://<?php echo $hostnames[0]; ?>:<?php echo $ports[0]; ?>/sendMessage/',
+            url: 'http://'+hostname+':'+port+'/sendMessage/',
             data: $('form').serialize(),
             success: function () {
                 document.getElementById('messageBox').value="";
@@ -107,7 +110,7 @@ var PlayerArrayNameList;
 
 function getPlayerInfo(){
     $.get({
-        url: 'http://<?php echo $hostnames[0]; ?>:<?php echo $ports[0]; ?>/getPlayerUUIDS',
+        url: 'http://'+hostname+':'+port+'/getPlayerUUIDS',
         dataType: 'text',
         type: 'GET',
         async: true,
@@ -126,7 +129,7 @@ function getPlayerInfo(){
     });
 
     $.get({
-        url: 'http://<?php echo $hostnames[0]; ?>:<?php echo $ports[0]; ?>/getPlayerNames',
+        url: 'http://'+hostname+':'+port+'/getPlayerNames',
         dataType: 'text',
         type: 'GET',
         async: true,
@@ -160,4 +163,10 @@ function getPlayerInfo(){
     }
 
     setTimeout(getPlayerInfo, 1000);
+}
+function updateServerInfo(){
+    name = servers["servers"][index].name
+    document.getElementById("maxPlayers").innerHTML = servers["servers"][index].maxplayers;
+    document.getElementById("serverName").innerHTML = name;
+    window.document.title = "CraftBack - " + name;
 }

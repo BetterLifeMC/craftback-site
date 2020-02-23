@@ -10,12 +10,17 @@
         <script src="js/servers.js"></script>
         <script src="js/sketch.js"></script>
         <title>CraftBack</title>
-
         <script>
-            
+            results = [];
+            $( document ).ready(function() {
+                console.log( "ready!" );
+                addServersToNav();
+                updateServerInfo();
+                getChats();
+            });
         </script>
     </head>
-    <body onload="getChats();getPlayerInfo();">
+    <body>
         <div>
             <div class="w3-bar topbar">
                 <a href="./index.html" class="w3-button w3-green w3-bar-item">Home</a>
@@ -46,9 +51,9 @@
                 <div id="logConsole" style="white-space:pre;"></div>
             </div>
             <div class="playerBox w3-quarter w3-container w3-row">
-                <span>Server Name: <?php echo $names[0]; ?></span>
+                <span>Server Name: <span  id="serverName"></span></span>
                 <br>
-                <span>Current Players: (<span id="currentPlayerCount"></span>/<?php echo $maxplayers[0]; ?>)</span>
+                <span>Current Players: (<span id="currentPlayerCount"></span>/<span id="maxPlayers"></span>)</span>
                 <hr>
                 <div id="allPlayers">
                 </div>
