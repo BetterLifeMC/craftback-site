@@ -9,27 +9,26 @@
         <script src="https://kit.fontawesome.com/1be2cd7175.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="js/servers.js"></script>
-
+        <script src="js/sketch.js"></script>
         <title>CraftBack</title>
 
         <script>
             results = [];
             $( document ).ready(function() {
                 console.log( "ready!" );
+                addServersToMainPage();
                 setTimeout(loadServerInfo(serverHostnames, serverPorts), 1000);
             });
         </script>
     </head>
-    <body onload="addServersToPage();">
+    <body onload="">
         <div>
             <div class="w3-bar topbar">
-                <a href="./index.php" class="w3-button w3-green w3-bar-item">Home</a>
+                <a href="./index.html" class="w3-button w3-green w3-bar-item">Home</a>
 
                 <div class="w3-dropdown-hover">
                     <button class="w3-button">CraftBack Servers</button>
                     <div class="w3-dropdown-content w3-bar-block w3-card-4" id="serverDropdownList">
-
-                        <a href="servers.php?fingerprint=CHANGEME" class="w3-bar-item w3-button">CHANGE ME</a>
                     </div>
                 </div>
                 <div class="w3-dropdown-hover">
@@ -51,22 +50,7 @@
                 <!-- <?php
                     }
                 ?> -->
-                <div class="info">
-                    <h2>CHANGEME</h2>
-                    <hr>
-                    <span class="serverInfo">CraftBack Version: <span style="float:right">CHANGEME</span></span>
-                    <br>
-                    <br>
-                    <span class="serverInfo">Server hostname: <span style="float:right">CHANGEME</span></span>
-                    <br>
-                    <br>
-                    <span class="serverInfo">Max players: <span style="float:right">CHANGEME</span></span>
-                    <br>
-                    <br>
-                    <span class="serverInfo">Current players: <span style="float:right" id="currentPlayerCountCHANGEME"> </span></span>
-                    <br>
-                    <br>
-                </div>
+                <!-- put into servers.js -->
                 <!-- <?php
                     if(($i + 1) % 3 == 0){
                  ?> -->
