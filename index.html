@@ -20,17 +20,15 @@
             });
         </script>
     </head>
-    <body>
+    <body onload="addServersToPage();">
         <div>
             <div class="w3-bar topbar">
                 <a href="./index.php" class="w3-button w3-green w3-bar-item">Home</a>
 
                 <div class="w3-dropdown-hover">
                     <button class="w3-button">CraftBack Servers</button>
-                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                        <!-- <?php
-                            for($i = 0; $i < sizeof($navNames); $i ++){
-                        ?> -->
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4" id="serverDropdownList">
+
                         <a href="servers.php?fingerprint=CHANGEME" class="w3-bar-item w3-button">CHANGE ME</a>
                     </div>
                 </div>
