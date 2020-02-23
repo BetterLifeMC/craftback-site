@@ -21,11 +21,25 @@ for (var i = 0; i < servers["servers"].length; i++) {
     serverFingerPrints.push(servers["servers"][i].fingerprint);
 }
 
+$.urlParam = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results==null){
+       return null;
+    }
+    else{
+       return results[1] || 0;
+    }
+}
+
 function addServersToNav(){
     for (var i = 0; i < servers["servers"].length; i++) {
         document.getElementById("serverDropdownList").innerHTML +=
-            '<a href="servers.html?fingerprint='+servers["servers"][i].fingerprint+
+            '<a id="serverDropdown'+i+'" href="servers.html?fingerprint='+servers["servers"][i].fingerprint+
             '" class="w3-bar-item w3-button dropdown"> '+servers["servers"][i].name+'</a>';
+            if(servers["servers"][i].fingerprint == $.urlParam("fingerprint")){
+                document.getElementById("serverDropdown"+i).classList.remove("dropdown");
+                document.getElementById("serverDropdown"+i).classList.add("w3-metro-darken");
+            }
     }
 }
 function addServersToMainPage(){
@@ -54,15 +68,7 @@ function addServersToMainPage(){
         }
     }
 }
-$.urlParam = function(name){
-    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-    if (results==null){
-       return null;
-    }
-    else{
-       return results[1] || 0;
-    }
-}
+
 index = serverFingerPrints.indexOf($.urlParam("fingerprint"));
 hostname = serverHostnames[index];
 port = serverPorts[index];
