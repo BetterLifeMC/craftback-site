@@ -13,7 +13,7 @@ $navFingerprints = $sqlquery->get_fingerprints();
             <button class="w3-button">CraftBack Servers</button>
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
                 <?php
-                    for($i = 0; $i < sizeof($id); $i ++){
+                    for($i = 0; $i < sizeof($navNames); $i ++){
                 ?>
                 <a href="servers.php?fingerprint=<?php echo $navFingerprints[$i]; ?>" class="w3-bar-item w3-button dropdown"><?php echo $navNames[$i]; ?></a>
                 <?php } ?>
