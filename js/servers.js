@@ -25,7 +25,7 @@ function addServersToNav(){
     for (var i = 0; i < servers["servers"].length; i++) {
         document.getElementById("serverDropdownList").innerHTML +=
             '<a href="servers.html?fingerprint='+servers["servers"][i].fingerprint+
-            '" class="w3-bar-item w3-button"> '+servers["servers"][i].name+'</a>';
+            '" class="w3-bar-item w3-button dropdown"> '+servers["servers"][i].name+'</a>';
     }
 }
 function addServersToMainPage(){
@@ -122,6 +122,10 @@ function getPlayerInfo(){
                 playerUUIDList = JSON.parse(response);
 
                 currentPlayerCount = playerUUIDList.length;
+                if(currentPlayerCount == undefined){
+                    currentPlayerCount = 0;
+                }
+                document.getElementById("currentPlayerCount").innerHTML = currentPlayerCount;
             }
         },
         error: function (jqXHR, status, errorThrown) {
