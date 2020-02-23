@@ -120,8 +120,8 @@
             }
         </script>
     </head>
-    <body onload="getChats();getPlayerInfo();loadDarkMode();">
-        <div class="w3-bar w3-metro-darken">
+    <body onload="getChats();getPlayerInfo();">
+        <div class="w3-bar topbar">
             <a href="./index.php" class="w3-button w3-green w3-bar-item">Home</a>
             <div class="w3-dropdown-hover">
                 <button class="w3-button">Git</button>
