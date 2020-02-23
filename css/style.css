@@ -2,8 +2,8 @@
   transition: all 0.3s ease;
 }
 :root{
-    --background: #273859;
-    --background-accent: #7686A6;
+    --background: #1b2029;
+    --background-accent: #3c4453;
     --color-1: #1D734B;
     --color-2: #32A670;
     --color-4: #D9D2B0;
@@ -24,7 +24,7 @@ div.messageBox{
 
 }
 body{
-    background-color: #000;
+    background-color: var(--background);
 }
 input.messageBox{
     width: 100%;
@@ -55,9 +55,13 @@ div#allPlayers{
 }
 
 .info{
-    background-color: #4E90BF;
+    background-color: var(--background-accent);
     color:white;
-    border: 1px solid #fff;
+    border: 1px solid var(--color-4);
+}
+.topbar{
+  background-color: var(--color-1);
+  color: var(--color-4);
 }
 span.serverInfo{
     font-size: 16px;
