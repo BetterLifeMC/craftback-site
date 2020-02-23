@@ -71,7 +71,7 @@
                 <?php
                     }
                 ?>
-                <div class="w3-third w3-container info">
+                <div class="info">
                     <h2><?php echo $names[$i]; ?></h2>
                     <hr>
                     <span class="serverInfo">CraftBack Version: <span style="float:right"><?php echo $versions[$i]; ?></span></span>
