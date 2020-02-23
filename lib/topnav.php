@@ -7,7 +7,7 @@ $navFingerprints = $sqlquery->get_fingerprints();
 ?>
 <div>
     <div class="w3-bar topbar">
-        <a href="#home" class="w3-button w3-green w3-bar-item">Home</a>
+        <a href="./index.php" class="w3-button w3-green w3-bar-item">Home</a>
 
         <div class="w3-dropdown-hover">
             <button class="w3-button">CraftBack Servers</button>
@@ -15,7 +15,7 @@ $navFingerprints = $sqlquery->get_fingerprints();
                 <?php
                     for($i = 0; $i < sizeof($navNames); $i ++){
                 ?>
-                <a href="servers.php?fingerprint=<?php echo $navFingerprints[$i]; ?>" class="w3-bar-item w3-button <?php echo (($_GET['fingerprint'] == $navFingerprints[$i]) ? "dropdown" : "w3-metro-darken"); ?>"><?php echo $navNames[$i]; ?></a>
+                <a href="servers.php?fingerprint=<?php echo $navFingerprints[$i]; ?>" class="w3-bar-item w3-button <?php echo (($_GET['fingerprint'] == $navFingerprints[$i]) ? "w3-metro-darken" : "dropdown"); ?>"><?php echo $navNames[$i]; ?></a>
                 <?php } ?>
             </div>
         </div>
