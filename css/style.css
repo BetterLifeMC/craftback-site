@@ -65,7 +65,7 @@ div#allPlayers{
     border: 1px solid var(--color-4);
     padding: 10px;
     margin: 10px;
-    width: calc(33% - 30px);
+    width: calc(32%);
     float: left;
     box-shadow:0 2px 5px 0 var(--background-accent-2),0 2px 10px 0 var(--background-accent-2);
 }
