@@ -15,7 +15,7 @@ $navFingerprints = $sqlquery->get_fingerprints();
                 <?php
                     for($i = 0; $i < sizeof($navNames); $i ++){
                 ?>
-                <a href="servers.php?fingerprint=<?php echo $navFingerprints[$i]; ?>" class="w3-bar-item w3-button dropdown"><?php echo $navNames[$i]; ?></a>
+                <a href="servers.php?fingerprint=<?php echo $navFingerprints[$i]; ?>" class="w3-bar-item w3-button <?php (($_GET['fingerprint'] == $navFingerprints[$i]) ? echo "dropdown" : echo "w3-metro-darken"); ?>"><?php echo $navNames[$i]; ?></a>
                 <?php } ?>
             </div>
         </div>
