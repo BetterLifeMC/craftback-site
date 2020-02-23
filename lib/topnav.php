@@ -1,15 +1,8 @@
 <?php
 
-include('sql.php');
-$sqlquery = new doSQL();
 $sqlquery->doSQLStuff("SELECT * FROM `Servers` ORDER BY name ASC");
-$names = $sqlquery->get_names();
-$hostnames = $sqlquery->get_hostnames();
-$ports = $sqlquery->get_ports();
-$fingerprints = $sqlquery->get_fingerprints();
-$versions = $sqlquery->get_versions();
-$maxplayers = $sqlquery->get_maxplayers();
-$id = $sqlquery->get_id();
+$navNames = $sqlquery->get_names();
+$navFingerprints = $sqlquery->get_fingerprints();
 
 ?>
 <div>
@@ -22,7 +15,7 @@ $id = $sqlquery->get_id();
                 <?php
                     for($i = 0; $i < sizeof($id); $i ++){
                 ?>
-                <a href="servers.php?fingerprint=<?php echo $fingerprints[$i]; ?>" class="w3-bar-item w3-button dropdown"><?php echo $names[$i]; ?></a>
+                <a href="servers.php?fingerprint=<?php echo $navFingerprints[$i]; ?>" class="w3-bar-item w3-button dropdown"><?php echo $navNames[$i]; ?></a>
                 <?php } ?>
             </div>
         </div>
