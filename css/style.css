@@ -68,6 +68,10 @@ div#allPlayers{
     float: left;
     box-shadow:0 2px 5px 0 var(--background-accent-2),0 2px 10px 0 var(--background-accent-2);
 }
+a.dropdown{
+  background-color: var(--color-1);
+  color: var(--color-4);
+}
 .topbar{
   background-color: var(--background-accent-2);
   color: var(--color-4);
