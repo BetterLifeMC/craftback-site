@@ -25,16 +25,11 @@
                 console.log( "ready!" );
                 setTimeout(loadServerInfo(serverHostnames, serverPorts), 1000);
             });
-
-
         </script>
-
     </head>
     <body>
-        <!-- Shamelessly snatched from W3 -->
         <?php include('lib/topnav.php'); ?>
         <div id="bigcontainer">
-
         <?php
             for($i = 0; $i < sizeof($id); $i++){
                 if(($i) % 3 == 0) {
@@ -65,6 +60,5 @@
                 </div>
             <?php } } ?>
         </div>
-
     </body>
 </html>
