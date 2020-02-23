@@ -7,6 +7,7 @@
     --background-accent-2: #3f4147;
     --background-accent-3: #61808C;
     --background-accent-4: #032F40;
+    --background-accent-5: #013440;
     --color-1: #1D734B;
     --color-2: #32A670;
     --color-3: #b5ffa3;
@@ -63,7 +64,7 @@ div#allPlayers{
 }
 
 .info{
-    background-color: var(--background-accent-3);
+    background-color: var(--background-accent-5);
     color:white;
     border: 1px solid var(--color-4);
     padding: 10px;
