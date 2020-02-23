@@ -13,7 +13,7 @@
 #logConsole{
     overflow-y: scroll;
     min-height: 80vh;
-    max-height: 92.25vh;
+    height: calc(100vh - 68px);
     padding: 10px;
     font-family: Consolas;
 }
