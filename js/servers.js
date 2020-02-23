@@ -32,8 +32,12 @@ function addServersToMainPage(){
     element = document.getElementById("bigcontainer");
     for (var i = 0; i < servers["servers"].length; i++) {
         if(i % 3 == 0){
-            element.innerHTML +="            <div class='info'>"+
-"                <h2>CHANGEME</h2>"+
+            element.innerHTML += "            <div id='main' class='w3-row'>";
+            main = document.getElementById("main");
+
+        }
+            main.innerHTML +="            <div class='info'>"+
+"                <h2>"+servers["servers"][i].name+"</h2>"+
 "                <hr>"+
 "                <span class='serverInfo'>Server hostname: <span style='float:right'>"+serverHostnames[i]+"</span></span>"+
 "                <br>"+
@@ -45,6 +49,8 @@ function addServersToMainPage(){
 "                <br>"+
 "                <br>"+
 "            </div>";
+        if((i+1) %3 == 0){
+            element.innerHTML += "          </div>";
         }
     }
 }

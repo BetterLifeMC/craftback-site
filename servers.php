@@ -116,7 +116,24 @@
         </script>
     </head>
     <body onload="getChats();getPlayerInfo();">
-        <?php include('lib/topnav.php'); ?>
+        <div>
+            <div class="w3-bar topbar">
+                <a href="./index.html" class="w3-button w3-green w3-bar-item">Home</a>
+
+                <div class="w3-dropdown-hover">
+                    <button class="w3-button">CraftBack Servers</button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4" id="serverDropdownList">
+                    </div>
+                </div>
+                <div class="w3-dropdown-hover">
+                    <button class="w3-button">Git</button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="https://gitlab.com/gt3ch1/craftback" class="w3-bar-item w3-button dropdown" >CraftBack</a>
+                        <a href="https://gitlab.com/gt3ch1/craftback-site" class="w3-bar-item w3-button  dropdown" >CraftBack UI</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="main" class="w3-row w3-animate-opacity" style="width=300px;">
             <div>
                 <div class="messageBox w3-threequarter w3-hover-shadow">
@@ -139,9 +156,4 @@
         </div>
 
     </body>
-    <?php
-        if($_GET['currentPlayerCount'] == 1){
-            return ?><script>document.write(currentPlayerCount);</script><?php ;
-        }
-    ?>
 </html>
