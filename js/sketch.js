@@ -1,9 +1,9 @@
-function loadDarkMode(){
-    if(document.cookie == "darkmode"){
+function loadDarkMode() {
+    if (document.cookie == "darkmode") {
         document.getElementsByTagName("body")[0].style.backgroundColor = "#111";
         document.getElementsByTagName("body")[0].style.color = "#ddd";
         var length = document.getElementsByClassName("info").length;
-        if(document.getElementsByTagName("input")[0] != undefined){
+        if (document.getElementsByTagName("input")[0] != undefined) {
             document.getElementsByTagName("input")[0].style.backgroundColor = "#333"
             document.getElementsByTagName("input")[0].style.color = "#aaa";
         }
@@ -21,16 +21,16 @@ function loadDarkMode(){
             $(this).css(
                 "box-shadow", "0px 10px 10px #555"
             );
-            }, function() {
+        }, function() {
             $(this).css(
                 "box-shadow", "0px 0px 0px #555"
             );
         });
-    }else{
+    } else {
         document.getElementsByTagName("body")[0].style.backgroundColor = "#fff";
         document.getElementsByTagName("body")[0].style.color = "#000";
         var length = document.getElementsByClassName("info").length;
-        if(document.getElementsByTagName("input")[0] != undefined){
+        if (document.getElementsByTagName("input")[0] != undefined) {
             document.getElementsByTagName("input")[0].style.backgroundColor = "#fff";
             document.getElementsByTagName("input")[0].style.color = "#000";
         }
@@ -48,47 +48,49 @@ function loadDarkMode(){
             $(this).css(
                 "box-shadow", "-5px 10px 15px #888"
             );
-            }, function() {
+        }, function() {
             $(this).css(
                 "box-shadow", "0px 0px 0px #aaa"
             );
         });
     }
 }
-function toggleDarkMode(){
-    if(document.cookie == "darkmode"){
+
+function toggleDarkMode() {
+    if (document.cookie == "darkmode") {
         document.cookie = "lightmode";
-    }else{
+    } else {
         document.cookie = "darkmode";
     }
     loadDarkMode();
 }
-function loadServerInfo(HostNameArray, PortArray){
+
+function loadServerInfo(HostNameArray, PortArray) {
 
     //TODO:  Make this so it doesn't hang when a server doesn't load properly.
     for (var i = 0; i < HostNameArray.length; i++) {
         $.get({
-            url: 'http://'+HostNameArray[i]+':'+PortArray[i]+'/getPlayerNames',
+            url: 'http://' + HostNameArray[i] + ':' + PortArray[i] + '/getPlayerNames',
             dataType: 'text',
             type: 'GET',
             async: false,
             timeout: 200,
             statusCode: {
-                404: function (response) {
+                404: function(response) {
                     alert(404);
                 },
-                200: function (response) {
+                200: function(response) {
                     results.push(JSON.parse(response));
                     console.log(response);
                     console.log(PortArray[i]);
-                    document.getElementById("currentPlayerCount"+i).innerHTML = results[i].length;
+                    document.getElementById("currentPlayerCount" + i).innerHTML = results[i].length;
                 }
             },
-            error: function (jqXHR, status, errorThrown) {
-                console.log("Server " + HostNameArray[i]+':'+PortArray[i] + " Failed to respond on time!");
+            error: function(jqXHR, status, errorThrown) {
+                console.log("Server " + HostNameArray[i] + ':' + PortArray[i] + " Failed to respond on time!");
                 results.push([0]);
                 results[i] = [];
-                document.getElementById("currentPlayerCount"+i).innerHTML = results[i].length;
+                document.getElementById("currentPlayerCount" + i).innerHTML = results[i].length;
             }
         });
     }
